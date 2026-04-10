@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriSense - Nearby Agri Shops</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#313129",
+                        "on-secondary-fixed-variant": "#3b4a42",
+                        "surface-tint": "#3f6653",
+                        "surface-container-high": "#ece8dd",
+                        "on-surface": "#1c1c15",
+                        "surface-container-highest": "#e6e2d8",
+                        "on-secondary-container": "#58685f",
+                        "primary": "#012d1d",
+                        "inverse-on-surface": "#f4f1e6",
+                        "tertiary": "#401b1b",
+                        "on-tertiary-fixed-variant": "#673a39",
+                        "on-tertiary-container": "#d29895",
+                        "surface-bright": "#fdf9ee",
+                        "secondary": "#526259",
+                        "surface-variant": "#e6e2d8",
+                        "tertiary-container": "#5a302f",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fdf9ee",
+                        "on-secondary-fixed": "#101e17",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dddacf",
+                        "outline-variant": "#c1c8c2",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "secondary-fixed-dim": "#b9cbbf",
+                        "primary-fixed": "#c1ecd4",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "primary-container": "#1b4332",
+                        "on-tertiary-fixed": "#331111",
+                        "on-background": "#1c1c15",
+                        "surface": "#fdf9ee",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f2eee3",
+                        "tertiary-fixed": "#ffdad8",
+                        "outline": "#717973",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#d5e7db",
+                        "tertiary-fixed-dim": "#f5b7b4",
+                        "on-primary-container": "#86af99",
+                        "inverse-primary": "#a5d0b9",
+                        "secondary-container": "#d5e7db",
+                        "on-primary-fixed": "#002114",
+                        "surface-container-low": "#f7f3e8",
+                        "on-surface-variant": "#414844",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #fdf9ee;
+        }
+        .tonal-shift-only {
+            background-color: #f7f3e8;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 px-6 py-4 bg-[#fdf9ee] dark:bg-stone-950 flex justify-between items-center w-full max-w-screen-xl mx-auto z-40 sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#d5e7db]" data-icon="location_on">location_on</span>
+<div>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-tight text-[#1B4332] dark:text-[#d5e7db]">Agri Shops Near You</h1>
+<p class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Bengaluru, KA</p>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#f7f3e8]/50 dark:hover:bg-stone-800/50 transition-colors active:scale-95 duration-150 transition-transform">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#d5e7db]" data-icon="tune">tune</span>
+</button>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 pt-4">
+<!-- Search & Filters -->
+<section class="mb-8">
+<div class="relative mb-4">
+<input class="w-full h-14 bg-surface-container-highest border-none rounded-md px-12 focus:ring-0 focus:border-b-2 focus:border-outline text-on-surface placeholder-on-surface-variant/60 font-body" placeholder="Search for seeds, tools, or fertilizers..." type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant">mic</span>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<button class="pill-shaped bg-primary text-on-primary px-6 py-2 rounded-full font-label text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">done</span>
+                    Open now
+                </button>
+<button class="pill-shaped bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-label text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap hover:bg-on-secondary-fixed-variant/10">
+<span class="material-symbols-outlined text-sm">star</span>
+                    Top rated
+                </button>
+<button class="pill-shaped bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-label text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap hover:bg-on-secondary-fixed-variant/10">
+<span class="material-symbols-outlined text-sm">distance</span>
+                    Under 5km
+                </button>
+</div>
+</section>
+<!-- Shop List -->
+<div class="space-y-6">
+<!-- Highlighted Card: AgriHub Store -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+<div class="flex justify-between items-start mb-4">
+<div class="flex gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Closest to you</span>
+<span class="bg-primary-container/20 text-[#1B4332] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse"></span>
+                            Open now
+                        </span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm text-amber-600" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold font-headline">4.8</span>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="modern agriculture supply store interior with organized shelves of seeds and garden tools in bright warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKNZdXwt7AnlW5Sn3VlkMAWw2t-pWFvTVcvVsaVe0AMk_0-Qh3vcSU6bgD1fOOyZ1-7VrdlQzWCq2fN4nDRm2pf_6-Xs6mvzyBU34oAHKlRZHa6PDcMdMM66WGIu4fVpZxle0m_A1zkO-VuIfVw_zhlIhbhlV_r4d06SHMgp6L2_rZJwNHPE_u-Ds66parjKm5JjuGSItrsHLJpIFzChyY-eKqHhX7KmPHjeOXwg4SeeqDTmwFKeoUGeBOr2EAb8mwFUkMYfGqdoZ3"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-extrabold text-xl text-primary mb-1">AgriHub Store</h3>
+<p class="font-label text-xs text-on-surface-variant flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-sm">near_me</span>
+                            1.2km away • 123 Green Valley Road
+                        </p>
+<div class="flex gap-3 mt-4">
+<button class="flex-grow bg-primary text-on-primary py-3 rounded-full font-label text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">directions</span>
+                                Directions
+                            </button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-primary hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Farm Direct -->
+<div class="bg-surface-container-low rounded-lg p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-outline-variant/30 text-on-surface-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Closed</span>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm text-amber-600" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold font-headline">4.5</span>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 opacity-80 grayscale-[30%]">
+<img class="w-full h-full object-cover" data-alt="rustic farm supply store entrance with wooden doors and agricultural equipment displayed outside in afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYh003NwMBlxoEH7sfcBIwTYSgkL1b2JSagN0D1eQD3i2_HUG34p-EQxwc1fEGQ566Wb6iqucyROf0KFMI26sYiYhM19th1UTxUv5LbD1HryVVaIWKYmf1y0Z6Imo5EnbnbnRMJAMU1zJc27oigWDJNVrnp3WFwinBbcfKgB9yy3tbdRSHZimvj2hf9_2vl2F6rExKefelhdx7NlPC-yv515M7qCPNSylqQRskccA_rDeLC-9Y5rPeWSUgED4uF8YMOjZQ52iEcyMT"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold text-lg text-primary mb-1">Farm Direct</h3>
+<p class="font-label text-xs text-on-surface-variant flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-sm">near_me</span>
+                            2.5km away • 456 Rural Lane
+                        </p>
+<div class="flex gap-3 mt-4">
+<button class="flex-grow bg-secondary-container text-on-secondary-container py-3 rounded-full font-label text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">directions</span>
+                                Directions
+                            </button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-secondary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Seed & Soil -->
+<div class="bg-surface-container-low rounded-lg p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-primary-container/20 text-[#1B4332] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                        Open now
+                    </span>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm text-amber-600" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold font-headline">4.2</span>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="organic seed boutique with small glass jars on shelves and artisanal plant pots in a bright minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKSVRT69FBBRXxf3TYGQFeZ1uml3nqS98aRHbZk2EMGeaOQzMYGixW-nCUp96IJZiiw21_YKqVWy8VABd4Lts1BQ2_UhUB7OTc9J4_0G0XNMpW8YrUXNHeRgDmxa5KMsE7SERf2KxUpmZOzbzbt9vmQqk0mgWhcR5iuKMEemtMF6j4hkIJNslSvkiXQ-VAKNH1Drxlo16qcynqed-B48Grblag-P5sE4DKK3JxZmPuh7HrlrSw_LWzt8Hp_2Goi0rBXcltCHXaTJP8"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold text-lg text-primary mb-1">Seed &amp; Soil</h3>
+<p class="font-label text-xs text-on-surface-variant flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-sm">near_me</span>
+                            4.1km away • 789 Harvest Blvd
+                        </p>
+<div class="flex gap-3 mt-4">
+<button class="flex-grow bg-secondary-container text-on-secondary-container py-3 rounded-full font-label text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">directions</span>
+                                Directions
+                            </button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-secondary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Map CTA -->
+<div class="fixed bottom-28 left-0 w-full px-6 flex justify-center pointer-events-none">
+<button class="pointer-events-auto bg-primary text-on-primary px-8 py-4 rounded-full shadow-2xl flex items-center gap-3 font-headline font-bold text-sm tracking-tight active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+                View all on map
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center bg-[#fdf9ee]/60 dark:bg-stone-950/60 backdrop-blur-xl border-t border-[#c1c8c2]/15 shadow-[0_-4px_40px_0_rgba(1,45,29,0.06)] rounded-t-[3rem] px-8 pb-6 pt-4">
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2.5 hover:opacity-80 transition-opacity active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="potted_plant">potted_plant</span>
+<span class="font-['Work_Sans'] text-[10px] font-medium uppercase tracking-[0.05em]">Fields</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1B4332] text-white rounded-full px-5 py-2.5 hover:opacity-80 transition-opacity active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="font-['Work_Sans'] text-[10px] font-medium uppercase tracking-[0.05em]">Shops</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2.5 hover:opacity-80 transition-opacity active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="psychology">psychology</span>
+<span class="font-['Work_Sans'] text-[10px] font-medium uppercase tracking-[0.05em]">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2.5 hover:opacity-80 transition-opacity active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Work_Sans'] text-[10px] font-medium uppercase tracking-[0.05em]">Profile</span>
+</a>
+</nav>
+</body></html>

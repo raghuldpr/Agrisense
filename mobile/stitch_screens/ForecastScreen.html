@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Disease Forecast - AgriSense</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f2eee3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e6e2d8",
+                    "tertiary-container": "#5a302f",
+                    "on-secondary-container": "#58685f",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#1b4332",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#3f6653",
+                    "primary": "#012d1d",
+                    "tertiary-fixed-dim": "#f5b7b4",
+                    "outline-variant": "#c1c8c2",
+                    "on-primary-fixed": "#002114",
+                    "secondary": "#526259",
+                    "on-tertiary-fixed": "#331111",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fdf9ee",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#414844",
+                    "surface-dim": "#dddacf",
+                    "outline": "#717973",
+                    "on-primary-container": "#86af99",
+                    "surface-container-high": "#ece8dd",
+                    "on-secondary-fixed-variant": "#3b4a42",
+                    "surface-variant": "#e6e2d8",
+                    "on-tertiary-container": "#d29895",
+                    "on-background": "#1c1c15",
+                    "tertiary-fixed": "#ffdad8",
+                    "surface-container-low": "#f7f3e8",
+                    "secondary-fixed-dim": "#b9cbbf",
+                    "inverse-on-surface": "#f4f1e6",
+                    "background": "#fdf9ee",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#a5d0b9",
+                    "on-surface": "#1c1c15",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "secondary-container": "#d5e7db",
+                    "on-secondary-fixed": "#101e17",
+                    "surface": "#fdf9ee",
+                    "secondary-fixed": "#d5e7db",
+                    "inverse-surface": "#313129",
+                    "tertiary": "#401b1b",
+                    "on-tertiary-fixed-variant": "#673a39",
+                    "primary-fixed": "#c1ecd4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fdf9ee] dark:bg-[#012d1d] flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#f7f3e8]/50 transition-colors Active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-[#1b4332] dark:text-[#d5e7db]">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-tight text-[#1b4332] dark:text-[#d5e7db]">Disease Forecast</h1>
+</div>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#f7f3e8]/50 transition-colors Active:scale-95 duration-150 ease-in-out">
+<span class="material-symbols-outlined text-[#1b4332] dark:text-[#d5e7db]">filter_list</span>
+</button>
+</nav>
+<main class="max-w-2xl mx-auto px-6 pb-32">
+<!-- Location & Crop Header -->
+<section class="mt-4 mb-8">
+<div class="flex items-center gap-2 mb-4 opacity-70">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="text-sm font-medium font-label uppercase tracking-widest">Location: Bengaluru, KA</span>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-semibold text-sm whitespace-nowrap transition-transform active:scale-95">Tomato</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Potato</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Wheat</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Pepper</button>
+</div>
+</section>
+<!-- Summary Alert Card -->
+<section class="mb-10 relative">
+<div class="p-8 rounded-xl bg-surface-container-lowest border border-tertiary-fixed-dim/30 shadow-[0_4px_30px_rgba(0,0,0,0.02)]">
+<div class="absolute top-6 right-6 flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed-dim text-tertiary font-bold text-[10px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">error</span>
+                    High Risk
+                </div>
+<h2 class="font-headline font-extrabold text-2xl text-primary leading-tight mb-2">High risk days: Fri, Sat</h2>
+<p class="text-on-surface-variant leading-relaxed max-w-[80%]">Spray preventively on Thursday for best protection against Early Blight.</p>
+</div>
+</section>
+<!-- 7-Day Forecast List -->
+<section class="mb-10">
+<div class="bg-surface-container-low rounded-xl p-2">
+<!-- Forecast Row 1 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg mb-2 shadow-sm">
+<div class="flex-1">
+<p class="font-headline font-bold text-on-surface">Wed, 13 Oct</p>
+<div class="flex gap-3 mt-1 opacity-60">
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">device_thermostat</span>27°C</span>
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">humidity_mid</span>64%</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant text-[10px] font-bold uppercase tracking-widest">Low</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-[#3f6653] h-full w-[20%]"></div>
+</div>
+</div>
+</div>
+<!-- Forecast Row 2 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg mb-2 shadow-sm">
+<div class="flex-1">
+<p class="font-headline font-bold text-on-surface">Thu, 14 Oct</p>
+<div class="flex gap-3 mt-1 opacity-60">
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">device_thermostat</span>28°C</span>
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">humidity_mid</span>68%</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="px-3 py-0.5 rounded-full bg-[#fdf2b3] text-[#715900] text-[10px] font-bold uppercase tracking-widest">Medium</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-[#facc15] h-full w-[55%]"></div>
+</div>
+</div>
+</div>
+<!-- Forecast Row 3 (High Risk) -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg mb-2 shadow-sm border-l-4 border-tertiary">
+<div class="flex-1">
+<p class="font-headline font-bold text-on-surface">Fri, 15 Oct</p>
+<div class="flex gap-3 mt-1 opacity-60">
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">device_thermostat</span>26°C</span>
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">humidity_mid</span>78%</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed-dim text-tertiary text-[10px] font-bold uppercase tracking-widest">High</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-error h-full w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Forecast Row 4 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg mb-2 shadow-sm border-l-4 border-tertiary">
+<div class="flex-1">
+<p class="font-headline font-bold text-on-surface">Sat, 16 Oct</p>
+<div class="flex gap-3 mt-1 opacity-60">
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">device_thermostat</span>25°C</span>
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">humidity_mid</span>82%</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="px-3 py-0.5 rounded-full bg-tertiary-fixed-dim text-tertiary text-[10px] font-bold uppercase tracking-widest">High</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-error h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Forecast Row 5 -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg mb-2 shadow-sm">
+<div class="flex-1">
+<p class="font-headline font-bold text-on-surface">Sun, 17 Oct</p>
+<div class="flex gap-3 mt-1 opacity-60">
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">device_thermostat</span>27°C</span>
+<span class="flex items-center text-xs font-medium"><span class="material-symbols-outlined text-sm mr-1">humidity_mid</span>70%</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="px-3 py-0.5 rounded-full bg-[#fdf2b3] text-[#715900] text-[10px] font-bold uppercase tracking-widest">Medium</span>
+<div class="w-24 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-[#facc15] h-full w-[45%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Legend Section -->
+<div class="flex items-center justify-center gap-6 mt-4">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-[#3f6653]"></div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Low</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-[#facc15]"></div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Medium</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">High</span>
+</div>
+</div>
+</section>
+<!-- Preventive Advice Card -->
+<section class="mb-6">
+<div class="bg-primary p-8 rounded-xl relative overflow-hidden group">
+<!-- Background visual texture -->
+<div class="absolute -right-8 -bottom-8 opacity-10 rotate-12 group-hover:rotate-6 transition-transform duration-700">
+<span class="material-symbols-outlined text-[120px] text-on-primary">magnification_small</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="font-headline font-bold text-on-primary text-xl tracking-tight">Agronomist Advice</h3>
+</div>
+<p class="text-on-primary/90 leading-relaxed font-medium mb-4">
+                        Fungal growth is accelerated by high humidity (75%+) expected this weekend. Apply Copper Oxychloride early Thursday morning.
+                    </p>
+<button class="bg-on-primary text-primary px-6 py-2.5 rounded-full text-sm font-bold shadow-xl transition-transform active:scale-95">View Application Guide</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fdf9ee]/60 dark:bg-[#012d1d]/60 backdrop-blur-xl shadow-[0_-4px_40px_rgba(1,45,29,0.06)] rounded-t-[3rem] border-t border-[#c1c8c2]/15">
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="potted_plant">potted_plant</span>
+<span class="font-['Work_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Fields</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1b4332] text-[#ffffff] rounded-full px-5 py-2 translate-y-[-2px] transition-transform duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="coronavirus" style="font-variation-settings: 'FILL' 1;">coronavirus</span>
+<span class="font-['Work_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Risks</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Work_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Work_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</div>
+</body></html>

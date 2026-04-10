@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f2eee3",
+                        "inverse-surface": "#313129",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary": "#012d1d",
+                        "on-surface": "#1c1c15",
+                        "secondary": "#526259",
+                        "on-tertiary-fixed": "#331111",
+                        "background": "#fdf9ee",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-tertiary-fixed-variant": "#673a39",
+                        "on-secondary-fixed": "#101e17",
+                        "surface-dim": "#dddacf",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#f5b7b4",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "secondary-container": "#d5e7db",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f4f1e6",
+                        "secondary-fixed-dim": "#b9cbbf",
+                        "outline": "#717973",
+                        "on-secondary-fixed-variant": "#3b4a42",
+                        "inverse-primary": "#a5d0b9",
+                        "error": "#ba1a1a",
+                        "tertiary": "#401b1b",
+                        "on-primary-container": "#86af99",
+                        "on-secondary-container": "#58685f",
+                        "on-primary-fixed": "#002114",
+                        "tertiary-container": "#5a302f",
+                        "on-tertiary-container": "#d29895",
+                        "surface-variant": "#e6e2d8",
+                        "surface-container-low": "#f7f3e8",
+                        "surface-container-high": "#ece8dd",
+                        "surface": "#fdf9ee",
+                        "primary-fixed": "#c1ecd4",
+                        "primary-container": "#1b4332",
+                        "surface-tint": "#3f6653",
+                        "surface-container-highest": "#e6e2d8",
+                        "surface-bright": "#fdf9ee",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "outline-variant": "#c1c8c2",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1c15",
+                        "secondary-fixed": "#d5e7db",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .bg-botanical-gradient {
+            background: linear-gradient(135deg, #012d1d 0%, #1b4332 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body bg-botanical-gradient min-h-screen text-on-primary selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- Main Onboarding Container -->
+<main class="relative w-full max-w-md mx-auto min-h-screen flex flex-col items-center px-8 py-12">
+<!-- Top App Bar (Suppressed for focused onboarding as per rules, using direct layout) -->
+<header class="flex flex-col items-center justify-center w-full mb-12">
+<!-- Logo Module -->
+<div class="relative mb-8">
+<div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-[0_40px_60px_-15px_rgba(1,45,29,0.3)]">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="potted_plant">potted_plant</span>
+<div class="absolute -bottom-1 -right-1 w-8 h-8 bg-primary-fixed rounded-full flex items-center justify-center border-4 border-white">
+<span class="material-symbols-outlined text-primary text-xs" data-icon="memory" style="font-variation-settings: 'FILL' 1;">memory</span>
+</div>
+</div>
+</div>
+<!-- Identity -->
+<h1 class="font-headline font-extrabold text-4xl tracking-tight mb-2 text-white">AgriSense</h1>
+<p class="font-body text-white/80 text-lg font-medium">Your Smart Farming Assistant</p>
+</header>
+<!-- Content Area: Language Selection -->
+<section class="w-full flex-grow flex flex-col">
+<div class="mb-8 text-center">
+<h2 class="text-white/70 text-sm font-label uppercase tracking-widest font-semibold">Select your preferred language</h2>
+</div>
+<!-- Language Cards Stack -->
+<div class="space-y-4">
+<!-- Card 1: English -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest rounded-lg cursor-pointer transition-all hover:ring-2 hover:ring-primary-fixed active:scale-[0.98]">
+<input checked="" class="peer hidden" name="language" type="radio" value="en"/>
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                        🇺🇸
+                    </div>
+<div class="flex-grow">
+<span class="block font-headline font-bold text-on-surface text-lg">English</span>
+<span class="block font-body text-on-surface-variant text-sm">English</span>
+</div>
+<div class="w-6 h-6 border-2 border-outline-variant rounded-full flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</label>
+<!-- Card 2: Hindi -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest rounded-lg cursor-pointer transition-all hover:ring-2 hover:ring-primary-fixed active:scale-[0.98]">
+<input class="peer hidden" name="language" type="radio" value="hi"/>
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                        🇮🇳
+                    </div>
+<div class="flex-grow">
+<span class="block font-headline font-bold text-on-surface text-lg">हिंदी</span>
+<span class="block font-body text-on-surface-variant text-sm">Hindi</span>
+</div>
+<div class="w-6 h-6 border-2 border-outline-variant rounded-full flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</label>
+<!-- Card 3: Tamil -->
+<label class="group relative flex items-center p-6 bg-surface-container-lowest rounded-lg cursor-pointer transition-all hover:ring-2 hover:ring-primary-fixed active:scale-[0.98]">
+<input class="peer hidden" name="language" type="radio" value="ta"/>
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                        🇮🇳
+                    </div>
+<div class="flex-grow">
+<span class="block font-headline font-bold text-on-surface text-lg">தமிழ்</span>
+<span class="block font-body text-on-surface-variant text-sm">Tamil</span>
+</div>
+<div class="w-6 h-6 border-2 border-outline-variant rounded-full flex items-center justify-center peer-checked:border-primary peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Fixed Footer Action -->
+<footer class="w-full mt-12 mb-4">
+<button class="w-full py-5 bg-surface-container-lowest text-primary font-headline font-extrabold text-lg rounded-full shadow-lg transition-all active:scale-95 hover:bg-white flex items-center justify-center gap-2">
+                Continue
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-white/40 text-[10px] mt-6 uppercase tracking-[0.2em] font-medium">
+                Step 1 of 3 • Language Profile
+            </p>
+</footer>
+<!-- Decorative Botanical Elements (Asymmetric Layout Rule) -->
+<div class="absolute -bottom-20 -left-20 w-64 h-64 opacity-10 pointer-events-none rotate-45">
+<img alt="Decorative leaf texture" class="w-full h-full object-cover rounded-full" data-alt="Close-up of a vibrant green monstera leaf with intricate natural patterns and soft morning light textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOrvYJOop84pg3k5XS6gA2UwOJ6ceC_bj6UPKmNfOKPG7BFPfSc4mZIgTmXAidwzyOfsYVC8xKWFxrcpeTRo1TS65Sgfo_Wob16dKdC0Vl6z3lfQmt9yeSJoZ__5fBPi1aUT4M90Sl54m5uDINeXuSjc5cD1QRFG-d7fjN3iWcCE3zuRyp_c_vWhCbWcp6Uo3wWVBl3hQeCspj0cZPrQerRMcmwkhVnPcmY6l5tC3i_Ww8h1Mcjvf5CpxIx9ZniKJ2oBxfh1A3fsUF"/>
+</div>
+<!-- Subtle AI Node Pattern Overlay -->
+<div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none mix-blend-overlay">
+<svg height="100%" width="100%">
+<pattern height="40" id="pattern-circles" patternunits="userSpaceOnUse" width="40" x="0" y="0">
+<circle cx="20" cy="20" fill="#FFFFFF" r="1"></circle>
+</pattern>
+<rect fill="url(#pattern-circles)" height="100%" width="100%"></rect>
+</svg>
+</div>
+</main>
+</body></html>

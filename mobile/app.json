@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "AgriSense",
+    "slug": "agrisense",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B5E20"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.agrisense.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "AgriSense needs camera access to scan plant leaves for disease detection.",
+        "NSPhotoLibraryUsageDescription": "AgriSense needs photo library access to analyze plant images.",
+        "NSMicrophoneUsageDescription": "AgriSense needs microphone access for audio playback."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B5E20"
+      },
+      "package": "com.agrisense.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "AgriSense needs camera access to scan plant leaves."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "AgriSense needs photo access to analyze plant images."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "85f76144-31ea-461b-8839-5dcd0b28585a"
+      }
+    }
+  }
+}

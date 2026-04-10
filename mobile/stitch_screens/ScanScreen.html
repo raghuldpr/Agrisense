@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#bfc9c1",
+                    "surface-container-high": "#2a2a2a",
+                    "on-surface": "#e2e2e2",
+                    "tertiary-container": "#2c6a4e",
+                    "surface-variant": "#353535",
+                    "surface": "#131313",
+                    "outline-variant": "#404943",
+                    "primary": "#86d7ad",
+                    "surface-container-highest": "#353535",
+                    "tertiary-fixed-dim": "#94d4b1",
+                    "on-primary-fixed": "#002113",
+                    "background": "#131313",
+                    "inverse-on-surface": "#303030",
+                    "primary-fixed": "#a1f4c8",
+                    "on-error": "#690005",
+                    "on-primary-container": "#99ebc0",
+                    "inverse-primary": "#116c4a",
+                    "on-tertiary-fixed": "#002113",
+                    "outline": "#8a938c",
+                    "secondary-fixed-dim": "#a5d0b9",
+                    "on-tertiary": "#003824",
+                    "surface-dim": "#131313",
+                    "secondary": "#a5d0b9",
+                    "on-background": "#e2e2e2",
+                    "on-secondary-fixed": "#002114",
+                    "on-secondary-container": "#97c2ab",
+                    "on-tertiary-fixed-variant": "#0c5136",
+                    "on-primary": "#003824",
+                    "on-secondary-fixed-variant": "#274e3d",
+                    "on-primary-fixed-variant": "#005236",
+                    "surface-bright": "#393939",
+                    "surface-container-lowest": "#0e0e0e",
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary-fixed": "#b0f1cc",
+                    "surface-tint": "#86d7ad",
+                    "error-container": "#93000a",
+                    "on-secondary": "#0e3727",
+                    "surface-container-low": "#1b1b1b",
+                    "primary-fixed-dim": "#86d7ad",
+                    "error": "#ffb4ab",
+                    "on-error-container": "#ffdad6",
+                    "secondary-container": "#29513f",
+                    "tertiary": "#94d4b1",
+                    "on-tertiary-container": "#a7e7c4",
+                    "surface-container": "#1f1f1f",
+                    "secondary-fixed": "#c1ecd4",
+                    "primary-container": "#126c4a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scanner-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #86D7AD, transparent);
+            box-shadow: 0 0 15px #86D7AD;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-transparent flex items-center justify-between px-6 py-4 w-full">
+<button class="flex items-center justify-center text-[#86D7AD] hover:bg-[#1B4332]/40 transition-colors active:scale-95 duration-150 rounded-full p-2">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-[#86D7AD] font-bold text-lg font-manrope text-sm font-medium tracking-wider uppercase">Scan Leaf</h1>
+<button class="flex items-center justify-center text-[#86D7AD] hover:bg-[#1B4332]/40 transition-colors active:scale-95 duration-150 rounded-full p-2">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</button>
+</header>
+<main class="relative min-h-screen pt-20 pb-40 px-6 flex flex-col items-center">
+<!-- Crop Badge -->
+<div class="mb-8 mt-4">
+<div class="bg-secondary-container px-5 py-2 rounded-full flex items-center gap-2 shadow-[0_4px_20px_rgba(0,0,0,0.4)] transition-transform hover:scale-105 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="nutrition" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+<span class="font-label text-sm font-bold tracking-widest uppercase text-on-secondary-container">Tomato</span>
+</div>
+</div>
+<!-- Main Viewfinder -->
+<div class="relative w-full aspect-[3/4] max-h-[486px] rounded-lg overflow-hidden bg-surface-container-lowest ring-1 ring-outline-variant/15">
+<!-- Camera Feed Mock -->
+<div class="absolute inset-0 z-0">
+<img alt="close-up of vibrant green tomato leaves with visible veins and organic texture in a moody dark garden setting" class="w-full h-full object-cover opacity-60 grayscale-[0.3]" data-alt="close-up of vibrant green tomato leaves with visible veins and organic texture in a moody dark garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC0OVCuTkG0qFwaY6kU9dRiZsZTMMeXyISiaBFa8EKGvAuk6Tx6Y1pAcQwsKc28VKUasNRWK_hS67n_1r5ctJhyUNKntJQ5nKEDAIapd5aPAAB8O7fsv4rIgk3Q1fm5L5EA6IURJHxLPwsWdU0_FkuZ4bxz4476W1eAn3IGR7biFNQQdrcRnZm1OH6v213SrjsbicBQidLr_dyjF6wOVk4J1UHmEkcllGJhzwDwz9IGMd459h3DlySPv1W_YLVHk7pM43uHRjyCdgK"/>
+</div>
+<!-- Scanning Elements -->
+<div class="absolute inset-0 z-10 p-8 flex flex-col justify-between pointer-events-none">
+<!-- Top Corner -->
+<div class="flex justify-between">
+<div class="w-12 h-12 border-t-2 border-l-2 border-primary rounded-tl-sm"></div>
+<div class="w-4 h-4 border-t-1 border-r-1 border-primary/30"></div>
+</div>
+<!-- Scanner Pulse Line (Visual representation) -->
+<div class="scanner-line opacity-80" style="top: 40%"></div>
+<!-- Bottom Corner -->
+<div class="flex justify-between items-end">
+<div class="w-4 h-4 border-b-1 border-l-1 border-primary/30"></div>
+<div class="w-12 h-12 border-b-2 border-r-2 border-primary rounded-br-sm"></div>
+</div>
+</div>
+<!-- Glass Overlay Layering -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
+</div>
+<!-- Instructions -->
+<div class="mt-8 text-center px-4">
+<p class="text-primary font-headline text-sm font-medium tracking-wide uppercase opacity-90">
+                Position the leaf inside the frame
+            </p>
+<div class="mt-2 flex justify-center">
+<div class="w-1 h-1 bg-primary rounded-full animate-pulse shadow-[0_0_8px_#86D7AD]"></div>
+</div>
+</div>
+<!-- Tip Card -->
+<div class="mt-10 w-full max-w-sm">
+<div class="bg-surface-container-low rounded-lg p-4 flex items-start gap-4 border-l-4 border-primary shadow-lg">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="lightbulb">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="text-on-surface font-body text-sm font-medium leading-relaxed">
+                        Tip: Ensure good lighting for better results
+                    </span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Actions Shell -->
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-12 pt-6 pb-10 bg-[#1B1B1B]/60 backdrop-blur-3xl rounded-t-[40px] z-50 shadow-[0_-8px_40px_rgba(0,33,19,0.4)]">
+<!-- Upload Action -->
+<button class="flex flex-col items-center justify-center text-[#E2E2E2] p-4 opacity-70 hover:opacity-100 transition-opacity active:scale-90 transition-transform duration-200">
+<div class="mb-1 w-12 h-12 rounded-full border border-outline-variant/40 flex items-center justify-center hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+</div>
+<span class="font-manrope text-[10px] font-bold tracking-widest uppercase">Upload</span>
+</button>
+<!-- Capture Action (Active/Primary) -->
+<button class="flex flex-col items-center justify-center bg-gradient-to-br from-[#86D7AD] to-[#126C4A] text-[#131313] rounded-full p-4 w-20 h-20 shadow-[0_0_25px_rgba(134,215,173,0.5)] active:scale-90 transition-transform duration-200 -mt-10 border-4 border-background">
+<span class="material-symbols-outlined text-3xl" data-icon="photo_camera" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</button>
+<!-- Capture Label (Hidden for aesthetics or logic, but mapping to "Capture" tab) -->
+<div class="flex flex-col items-center justify-center text-[#E2E2E2] p-4 opacity-70">
+<div class="mb-1 w-12 h-12 flex items-center justify-center">
+<!-- Placeholder for spacing to balance the Upload button -->
+</div>
+<span class="font-manrope text-[10px] font-bold tracking-widest uppercase">Capture</span>
+</div>
+</div>
+</body></html>

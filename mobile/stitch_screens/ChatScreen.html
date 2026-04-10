@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#d5e7db",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fdf9ee",
+                        "inverse-on-surface": "#f4f1e6",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "surface-container-low": "#f7f3e8",
+                        "on-surface": "#1c1c15",
+                        "inverse-primary": "#a5d0b9",
+                        "on-primary-container": "#86af99",
+                        "tertiary-fixed-dim": "#f5b7b4",
+                        "background": "#fdf9ee",
+                        "outline": "#717973",
+                        "surface-container-highest": "#e6e2d8",
+                        "surface-container": "#f1eee3",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#58685f",
+                        "tertiary-container": "#5a302f",
+                        "on-tertiary-fixed": "#331111",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#b9cbbf",
+                        "secondary": "#526259",
+                        "primary": "#012d1d",
+                        "surface-container-high": "#ece8dd",
+                        "surface-tint": "#3f6653",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#3a4a42",
+                        "on-surface-variant": "#414844",
+                        "inverse-surface": "#313129",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "on-tertiary-fixed-variant": "#673a39",
+                        "primary-container": "#1b4332",
+                        "surface": "#fdf9ee",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#401b1b",
+                        "on-tertiary-container": "#d29895",
+                        "surface-dim": "#dddacf",
+                        "outline-variant": "#c1c8c2",
+                        "secondary-container": "#d5e7db",
+                        "on-primary-fixed": "#002114",
+                        "on-background": "#1c1c15",
+                        "surface-variant": "#e6e2d8",
+                        "primary-fixed": "#c1ecd4",
+                        "on-secondary-fixed": "#101f17"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .chat-scroll::-webkit-scrollbar { width: 4px; }
+        .chat-scroll::-webkit-scrollbar-track { background: transparent; }
+        .chat-scroll::-webkit-scrollbar-thumb { background: #d5e7db; border-radius: 10px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Anchor -->
+<header class="w-full top-0 sticky z-50 bg-[#fdf9ee] dark:bg-[#012d1d]">
+<div class="flex items-center justify-between px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#012d1d] dark:text-[#fdf9ee] text-3xl">agriculture</span>
+<h1 class="text-[#012d1d] dark:text-[#fdf9ee] font-extrabold tracking-tighter text-2xl">AgriSense</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#1c1c15] dark:text-[#fdf9ee] opacity-60 hover:bg-[#d5e7db]/20 transition-colors px-4 py-2 rounded-full font-manrope font-bold" href="#">Home</a>
+<a class="text-[#1b4332] dark:text-[#d5e7db] font-bold px-4 py-2 rounded-full" href="#">Chat</a>
+<a class="text-[#1c1c15] dark:text-[#fdf9ee] opacity-60 hover:bg-[#d5e7db]/20 transition-colors px-4 py-2 rounded-full font-manrope font-bold" href="#">Sensors</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a confident modern farmer in a soft lit studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ6EcmraSv3QBaOG_uCZ-RCJR4xjx6hK-gao-L1-pIIGteKx2-8jdRvuufzXBW7o_ujmL7vdem6Ni5KsXiV3aKKPli1NNjgwBRqgFqRcUq0Chz6xoHH1cE5gttfEyOmy8cuvIopegxVLjZ0y6ycipulg-hDrt2NAqWw__l7l-_9DBAA9eog4uLji-hI8o-wQPOnXIb2bRw9zHA0CN4k_s4ZSLX70q3Hkb2kvI08HyQ0L1nfrq1zhp2zu0wmHbWPQIbjQzAiwk8QNvZ"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 flex flex-col max-w-4xl mx-auto w-full px-6 pt-4 pb-32">
+<!-- Header Section -->
+<div class="mb-10 text-center md:text-left">
+<span class="text-[0.75rem] font-bold uppercase tracking-[0.1em] text-on-secondary-container mb-2 block">AI Powered Intelligence</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight mb-2">AgriSense Assistant</h2>
+<p class="text-on-surface-variant font-medium">Ask in EN, HI, or TA (English, Hindi, or Tamil)</p>
+</div>
+<!-- Chat History Area -->
+<div class="flex-1 space-y-8 chat-scroll overflow-y-auto mb-8 pr-2">
+<!-- Helper Intro Card (Bento Style) -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col md:flex-row gap-8 items-center border-none">
+<div class="w-24 h-24 bg-primary-container rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Ready to assist your harvest</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-md">I can help you diagnose crop diseases, optimize irrigation schedules, and provide real-time market pricing in your local language.</p>
+</div>
+</div>
+<!-- Assistant Bubble -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white text-xl">psychology</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container p-6 rounded-xl rounded-tl-none max-w-[85%] md:max-w-[70%]">
+<p class="leading-relaxed">Vanakkam! I see your local area has experienced high humidity recently. Are you noticing any yellow spots on your Tomato leaves?</p>
+<div class="mt-4 flex gap-2">
+<span class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest px-3 py-1 bg-primary/10 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            Live Intelligence
+                        </span>
+</div>
+</div>
+</div>
+<!-- User Bubble -->
+<div class="flex items-start gap-4 flex-row-reverse">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up profile of a man with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGYbNWIyn3mbsoi427k877OGZvBvo6HoGuekOLI3ehuVnYdRVtGLSZ8XTLf4yzCXMqapGJTf7EUR3lAiWtRpYbYvp0xVN4e3y1tdEqRKgZWJ2grfccameXiIrOfhl7WjYoSdYA3-V1Lv707gCW0mW_lcw30lAFudmOgn2R7K7ZO4B84QYyEyuMDnaNwXXFwwRFjPpB-YnFaLIzNNjfwYwfKB2X583lPf61dn6F8CSnPxcHM45xilv850lGDWet0ZIqiOhMPzhsGiyO"/>
+</div>
+<div class="bg-primary-container text-white p-6 rounded-xl rounded-tr-none max-w-[85%] md:max-w-[70%]">
+<p class="leading-relaxed">Yes, especially on the lower leaves. It looks like a dusty coating.</p>
+</div>
+</div>
+<!-- Assistant Analysis Card -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white text-xl">nature</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl rounded-tl-none max-w-[90%] shadow-sm border-none">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<span class="text-sm font-bold text-primary">DIAGNOSIS: POTENTIAL MILDEW</span>
+</div>
+<p class="text-on-surface-variant mb-4 leading-relaxed">Based on the "dusty coating" and current moisture levels, your tomatoes might have Powdery Mildew. I recommend improving airflow and checking soil pH.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-[10px] font-bold text-outline uppercase mb-1">Recommended Action</p>
+<p class="text-sm font-semibold">Organic Neem Oil Spray</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-[10px] font-bold text-outline uppercase mb-1">Market Price</p>
+<p class="text-sm font-semibold">₹450 / 500ml (Local Avg)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Section -->
+<div class="fixed bottom-32 left-0 w-full px-6 pointer-events-none">
+<div class="max-w-4xl mx-auto flex flex-col gap-4 pointer-events-auto">
+<!-- Suggestions -->
+<div class="flex gap-2 overflow-x-auto pb-2 chat-scroll">
+<button class="whitespace-nowrap bg-surface-container-lowest hover:bg-secondary-container transition-colors px-6 py-2 rounded-full text-xs font-bold text-on-surface-variant border-none shadow-sm">How to treat Mildew?</button>
+<button class="whitespace-nowrap bg-surface-container-lowest hover:bg-secondary-container transition-colors px-6 py-2 rounded-full text-xs font-bold text-on-surface-variant border-none shadow-sm">Weather forecast for today</button>
+<button class="whitespace-nowrap bg-surface-container-lowest hover:bg-secondary-container transition-colors px-6 py-2 rounded-full text-xs font-bold text-on-surface-variant border-none shadow-sm">Tomato market prices</button>
+<button class="whitespace-nowrap bg-surface-container-lowest hover:bg-secondary-container transition-colors px-6 py-2 rounded-full text-xs font-bold text-on-surface-variant border-none shadow-sm">Check Sensor A1</button>
+</div>
+<!-- Input Field Shell -->
+<div class="bg-surface-container-high p-4 rounded-[2rem] shadow-xl backdrop-blur-md">
+<!-- Context Pills -->
+<div class="flex gap-2 mb-3 px-2">
+<span class="bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">potted_plant</span> Tomato
+                        </span>
+<span class="bg-secondary-container text-primary px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">translate</span> Tamil (TA)
+                        </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-12 h-12 flex items-center justify-center text-primary-container hover:bg-white/50 rounded-full transition-colors">
+<span class="material-symbols-outlined">photo_camera</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-primary-container hover:bg-white/50 rounded-full transition-colors">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline font-medium px-2" placeholder="Type your question..." type="text"/>
+<button class="bg-primary-container text-white w-12 h-12 rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-6 pb-8 bg-[#fdf9ee]/80 dark:bg-[#012d1d]/80 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-12px_40px_rgba(28,28,21,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fdf9ee] opacity-70 hover:opacity-100 transition-opacity active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-manrope font-bold text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fdf9ee] opacity-70 hover:opacity-100 transition-opacity active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-manrope font-bold text-[10px] uppercase tracking-widest mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fdf9ee] opacity-70 hover:opacity-100 transition-opacity active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="font-manrope font-bold text-[10px] uppercase tracking-widest mt-1">Sensors</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#1b4332] text-[#fdf9ee] rounded-full px-6 py-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">forum</span>
+<span class="font-manrope font-bold text-[10px] uppercase tracking-widest mt-1">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fdf9ee] opacity-70 hover:opacity-100 transition-opacity active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-manrope font-bold text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

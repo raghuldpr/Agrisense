@@ -1,0 +1,87 @@
+{
+    "app_name": {
+        "en": "AgriSense",
+        "hi": "AgriSense",
+        "ta": "AgriSense"
+    },
+    "tagline": {
+        "en": "Smart Crop Disease Detection",
+        "hi": "स्मार्ट फसल रोग पहचान",
+        "ta": "அறிவார்ந்த பயிர் நோய் கண்டறிதல்"
+    },
+    "select_crop": {
+        "en": "Select Your Crop",
+        "hi": "अपनी फसल चुनें",
+        "ta": "உங்கள் பயிரை தேர்வு செய்யுங்கள்"
+    },
+    "capture_image": {
+        "en": "Capture Leaf Image",
+        "hi": "पत्ती की तस्वीर लें",
+        "ta": "இலை புகைப்படம் எடுக்கவும்"
+    },
+    "upload_image": {
+        "en": "Upload from Gallery",
+        "hi": "गैलरी से अपलोड करें",
+        "ta": "கேலரியிலிருந்து பதிவேற்றவும்"
+    },
+    "analyze": {
+        "en": "Analyze Now",
+        "hi": "अभी विश्लेषण करें",
+        "ta": "இப்போது பகுப்பாய்வு செய்"
+    },
+    "disease_detected": {
+        "en": "Disease Detected",
+        "hi": "रोग पाया गया",
+        "ta": "நோய் கண்டறியப்பட்டது"
+    },
+    "confidence": {
+        "en": "Confidence",
+        "hi": "विश्वसनीयता",
+        "ta": "நம்பகத்தன்மை"
+    },
+    "treatment": {
+        "en": "Treatment",
+        "hi": "उपचार",
+        "ta": "சிகிச்சை"
+    },
+    "prevention": {
+        "en": "Prevention",
+        "hi": "रोकथाम",
+        "ta": "தடுப்பு"
+    },
+    "weather_risk": {
+        "en": "Weather Risk",
+        "hi": "मौसम जोखिम",
+        "ta": "வானிலை அபாயம்"
+    },
+    "risk_high": {
+        "en": "High Risk — Disease may spread",
+        "hi": "उच्च जोखिम — रोग फैल सकता है",
+        "ta": "அதிக அபாயம் — நோய் பரவலாம்"
+    },
+    "risk_medium": {
+        "en": "Moderate Risk — Monitor closely",
+        "hi": "मध्यम जोखिम — ध्यान से निगरानी करें",
+        "ta": "மிதமான அபாயம் — கவனமாக கண்காணிக்கவும்"
+    },
+    "risk_low": {
+        "en": "Low Risk — Conditions are safe",
+        "hi": "कम जोखिम — स्थिति सुरक्षित है",
+        "ta": "குறைந்த அபாயம் — நிலைமை பாதுகாப்பானது"
+    },
+    "play_voice": {
+        "en": "Play Voice Guidance",
+        "hi": "आवाज़ निर्देश सुनें",
+        "ta": "குரல் வழிகாட்டுதல் கேளுங்கள்"
+    },
+    "healthy_message": {
+        "en": "Your crop looks healthy! Keep monitoring regularly.",
+        "hi": "आपकी फसल स्वस्थ दिखती है! नियमित निगरानी जारी रखें।",
+        "ta": "உங்கள் பயிர் ஆரோக்கியமாக தெரிகிறது! தொடர்ந்து கண்காணிக்கவும்."
+    },
+    "select_language": {
+        "en": "Select Language",
+        "hi": "भाषा चुनें",
+        "ta": "மொழியை தேர்வு செய்யுங்கள்"
+    }
+}

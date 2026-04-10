@@ -1,0 +1,1752 @@
+{
+  "Tomato_Early_Blight": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Early Blight",
+      "hi": "अर्ली ब्लाइट",
+      "ta": "ஆரம்ப காய்ச்சல்"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Dark brown spots with concentric rings on older leaves",
+      "hi": "पुरानी पत्तियों पर गहरे भूरे रंग के केंद्रित छल्लेदार धब्बे",
+      "ta": "பழைய இலைகளில் கருமையான வளையங்களுடன் கூடிய பழுப்பு புள்ளிகள்"
+    },
+    "treatment": {
+      "en": [
+        "Apply copper-based fungicide (Blitox 50 WP)",
+        "Remove and destroy infected leaves immediately",
+        "Apply Mancozeb 75 WP @ 2g per litre of water"
+      ],
+      "hi": [
+        "कॉपर आधारित फफूंदनाशक (Blitox 50 WP) का छिड़काव करें",
+        "संक्रमित पत्तियों को तुरंत हटाएं और नष्ट करें",
+        "Mancozeb 75 WP @ 2g प्रति लीटर पानी में डालकर छिड़काव करें"
+      ],
+      "ta": [
+        "செம்பு அடிப்படையிலான பூஞ்சைக்கொல்லி (Blitox 50 WP) தெளிக்கவும்",
+        "பாதிக்கப்பட்ட இலைகளை உடனே அகற்றி அழிக்கவும்",
+        "Mancozeb 75 WP @ 2கி/லி தண்ணீரில் கலந்து தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Avoid overhead irrigation",
+        "Maintain proper plant spacing for airflow",
+        "Rotate crops every season"
+      ],
+      "hi": [
+        "ऊपर से सिंचाई से बचें",
+        "वायु प्रवाह के लिए पौधों के बीच उचित दूरी बनाए रखें",
+        "हर मौसम में फसल चक्र अपनाएं"
+      ],
+      "ta": [
+        "மேலிருந்து நீர்ப்பாசனம் தவிர்க்கவும்",
+        "காற்று சரியாக வர போதுமான இடைவெளி விடவும்",
+        "ஒவ்வொரு பருவமும் பயிர் சுழற்சி பின்பற்றவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 24,
+      "temp_max": 29
+    }
+  },
+  "Tomato_Late_Blight": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Late Blight",
+      "hi": "लेट ब्लाइट",
+      "ta": "தாமத காய்ச்சல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Water-soaked lesions turning brown-black, white mold on leaf underside",
+      "hi": "पानी से भीगे घाव जो भूरे-काले हो जाते हैं, पत्ती के नीचे सफेद फफूंद",
+      "ta": "நீர் தோய்ந்த புண்கள் பழுப்பு-கருப்பாக மாறும், இலையின் கீழ் வெள்ளை பூஞ்சை"
+    },
+    "treatment": {
+      "en": [
+        "Spray Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/litre",
+        "Remove heavily infected plants",
+        "Apply Cymoxanil 8% + Mancozeb 64% WP"
+      ],
+      "hi": [
+        "Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5g/लीटर का छिड़काव करें",
+        "अधिक संक्रमित पौधों को हटा दें",
+        "Cymoxanil 8% + Mancozeb 64% WP लगाएं"
+      ],
+      "ta": [
+        "Metalaxyl + Mancozeb (Ridomil Gold) @ 2.5கி/லி தெளிக்கவும்",
+        "அதிகமாக பாதிக்கப்பட்ட செடிகளை அகற்றவும்",
+        "Cymoxanil 8% + Mancozeb 64% WP தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use certified disease-free seeds",
+        "Avoid wet foliage — water at base only",
+        "Apply preventive fungicide spray during humid weather"
+      ],
+      "hi": [
+        "प्रमाणित रोगमुक्त बीजों का उपयोग करें",
+        "पत्तियों को गीला न करें — केवल जड़ में पानी दें",
+        "नम मौसम में निवारक फफूंदनाशक का छिड़काव करें"
+      ],
+      "ta": [
+        "சான்றளிக்கப்பட்ட நோயற்ற விதைகளை பயன்படுத்தவும்",
+        "இலைகளை நனைக்காதீர்கள் — அடியில் மட்டும் நீர் ஊற்றவும்",
+        "ஈரமான வானிலையில் தடுப்பு பூஞ்சைக்கொல்லி தெளிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 90,
+      "temp_min": 10,
+      "temp_max": 25
+    }
+  },
+  "Tomato_Leaf_Mold": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Leaf Mold",
+      "hi": "पत्ती फफूंद",
+      "ta": "இலை பூஞ்சை"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Yellow patches on upper leaf surface, olive-green mold on underside",
+      "hi": "पत्ती की ऊपरी सतह पर पीले धब्बे, नीचे की तरफ जैतून-हरे रंग की फफूंद",
+      "ta": "இலையின் மேல் பகுதியில் மஞ்சள் திட்டுகள், கீழ் பகுதியில் ஆலிவ்-பச்சை பூஞ்சை"
+    },
+    "treatment": {
+      "en": [
+        "Apply Chlorothalonil 75 WP @ 2g/litre",
+        "Improve greenhouse ventilation",
+        "Spray copper oxychloride"
+      ],
+      "hi": [
+        "Chlorothalonil 75 WP @ 2g/लीटर लगाएं",
+        "ग्रीनहाउस वेंटिलेशन सुधारें",
+        "कॉपर ऑक्सीक्लोराइड का छिड़काव करें"
+      ],
+      "ta": [
+        "Chlorothalonil 75 WP @ 2கி/லி தெளிக்கவும்",
+        "கிரீன்ஹவுஸ் காற்றோட்டம் மேம்படுத்தவும்",
+        "காப்பர் ஆக்சிகுளோரைடு தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Keep humidity below 85%",
+        "Ensure good air circulation",
+        "Remove infected leaves promptly"
+      ],
+      "hi": [
+        "आर्द्रता 85% से नीचे रखें",
+        "अच्छा वायु संचार सुनिश्चित करें",
+        "संक्रमित पत्तियों को तुरंत हटाएं"
+      ],
+      "ta": [
+        "ஈரப்பதத்தை 85% க்கு கீழ் வைக்கவும்",
+        "நல்ல காற்றோட்டம் உறுதி செய்யவும்",
+        "பாதிக்கப்பட்ட இலைகளை உடனே அகற்றவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 85,
+      "temp_min": 21,
+      "temp_max": 28
+    }
+  },
+  "Tomato_Septoria_Leaf_Spot": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Septoria Leaf Spot",
+      "hi": "सेप्टोरिया पत्ती धब्बा",
+      "ta": "செப்டோரியா இலை புள்ளி"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Small circular spots with dark borders and light grey centers",
+      "hi": "गहरे किनारों और हल्के भूरे केंद्र वाले छोटे गोलाकार धब्बे",
+      "ta": "கருமையான விளிம்புகளும் வெளிர் சாம்பல் மையமும் கொண்ட சிறிய வட்ட புள்ளிகள்"
+    },
+    "treatment": {
+      "en": [
+        "Apply Mancozeb 75 WP @ 2g/litre",
+        "Remove infected lower leaves",
+        "Spray Chlorothalonil every 7-10 days"
+      ],
+      "hi": [
+        "Mancozeb 75 WP @ 2g/लीटर लगाएं",
+        "संक्रमित निचली पत्तियों को हटाएं",
+        "हर 7-10 दिन में Chlorothalonil का छिड़काव करें"
+      ],
+      "ta": [
+        "Mancozeb 75 WP @ 2கி/லி தெளிக்கவும்",
+        "பாதிக்கப்பட்ட கீழ் இலைகளை அகற்றவும்",
+        "ஒவ்வொரு 7-10 நாட்களுக்கு Chlorothalonil தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Avoid working with plants when wet",
+        "Use drip irrigation",
+        "Mulch soil to reduce splash"
+      ],
+      "hi": [
+        "पौधे गीले होने पर काम न करें",
+        "ड्रिप सिंचाई का उपयोग करें",
+        "मिट्टी को मल्च करें"
+      ],
+      "ta": [
+        "செடிகள் நனைந்திருக்கும்போது வேலை செய்வதை தவிர்க்கவும்",
+        "டிரிப் நீர்ப்பாசனம் பயன்படுத்தவும்",
+        "மண்ணை மல்ச் செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 75,
+      "temp_min": 20,
+      "temp_max": 27
+    }
+  },
+  "Tomato_Bacterial_Spot": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Bacterial Spot",
+      "hi": "बैक्टीरियल स्पॉट",
+      "ta": "பாக்டீரியா புள்ளி"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Small water-soaked spots that turn brown with yellow halos",
+      "hi": "छोटे पानी से भीगे धब्बे जो पीले घेरे के साथ भूरे हो जाते हैं",
+      "ta": "மஞ்சள் வளையங்களுடன் பழுப்பாக மாறும் சிறிய நீர் தோய்ந்த புள்ளிகள்"
+    },
+    "treatment": {
+      "en": [
+        "Spray copper hydroxide 77 WP @ 2g/litre",
+        "Apply Streptomycin sulphate 90% SP",
+        "Remove heavily infected plants"
+      ],
+      "hi": [
+        "कॉपर हाइड्रॉक्साइड 77 WP @ 2g/लीटर का छिड़काव करें",
+        "Streptomycin sulphate 90% SP लगाएं",
+        "अधिक संक्रमित पौधों को हटाएं"
+      ],
+      "ta": [
+        "காப்பர் ஹைட்ராக்சைடு 77 WP @ 2கி/லி தெளிக்கவும்",
+        "Streptomycin sulphate 90% SP தெளிக்கவும்",
+        "அதிகமாக பாதிக்கப்பட்ட செடிகளை அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use resistant varieties",
+        "Avoid overhead irrigation",
+        "Disinfect tools regularly"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्मों का उपयोग करें",
+        "ऊपर से सिंचाई से बचें",
+        "औजारों को नियमित रूप से कीटाणुरहित करें"
+      ],
+      "ta": [
+        "எதிர்ப்பு திறன் கொண்ட ரகங்களை பயன்படுத்தவும்",
+        "மேலிருந்து நீர்ப்பாசனம் தவிர்க்கவும்",
+        "கருவிகளை தொடர்ந்து கிருமி நீக்கம் செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 24,
+      "temp_max": 30
+    }
+  },
+  "Tomato_Healthy": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं मिली। पौधा स्वस्थ दिखता है।",
+      "ta": "நோய் எதுவும் கண்டறியப்படவில்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Continue regular monitoring",
+        "Maintain proper watering",
+        "Apply balanced fertilizer"
+      ],
+      "hi": [
+        "नियमित निगरानी जारी रखें",
+        "उचित सिंचाई बनाए रखें",
+        "संतुलित उर्वरक डालें"
+      ],
+      "ta": [
+        "தொடர்ந்து கண்காணிக்கவும்",
+        "சரியான நீர்ப்பாசனம் பராமரிக்கவும்",
+        "சமச்சீர் உரம் இடவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Potato_Early_Blight": {
+    "crop": {
+      "en": "Potato",
+      "hi": "आलू",
+      "ta": "உருளைக்கிழங்கு"
+    },
+    "disease": {
+      "en": "Early Blight",
+      "hi": "अर्ली ब्लाइट",
+      "ta": "ஆரம்ப காய்ச்சல்"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Dark brown target-like spots on older leaves",
+      "hi": "पुरानी पत्तियों पर गहरे भूरे निशाने जैसे धब्बे",
+      "ta": "பழைய இலைகளில் இலக்கு போன்ற கருமையான பழுப்பு புள்ளிகள்"
+    },
+    "treatment": {
+      "en": [
+        "Apply Mancozeb 75 WP @ 2g/litre",
+        "Spray Azoxystrobin 23% SC",
+        "Remove infected leaves"
+      ],
+      "hi": [
+        "Mancozeb 75 WP @ 2g/लीटर लगाएं",
+        "Azoxystrobin 23% SC का छिड़काव करें",
+        "संक्रमित पत्तियों को हटाएं"
+      ],
+      "ta": [
+        "Mancozeb 75 WP @ 2கி/லி தெளிக்கவும்",
+        "Azoxystrobin 23% SC தெளிக்கவும்",
+        "பாதிக்கப்பட்ட இலைகளை அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use certified seed tubers",
+        "Avoid excess nitrogen",
+        "Maintain plant spacing"
+      ],
+      "hi": [
+        "प्रमाणित बीज कंदों का उपयोग करें",
+        "अतिरिक्त नाइट्रोजन से बचें",
+        "पौधों के बीच उचित दूरी बनाएं"
+      ],
+      "ta": [
+        "சான்றளிக்கப்பட்ட விதை கிழங்குகளை பயன்படுத்தவும்",
+        "அதிக நைட்ரஜன் தவிர்க்கவும்",
+        "செடி இடைவெளி பராமரிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 75,
+      "temp_min": 24,
+      "temp_max": 29
+    }
+  },
+  "Potato_Late_Blight": {
+    "crop": {
+      "en": "Potato",
+      "hi": "आलू",
+      "ta": "உருளைக்கிழங்கு"
+    },
+    "disease": {
+      "en": "Late Blight",
+      "hi": "लेट ब्लाइट",
+      "ta": "தாமத காய்ச்சல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Pale green water-soaked lesions turning dark brown, white fungal growth underneath",
+      "hi": "हल्के हरे पानी से भीगे घाव जो गहरे भूरे हो जाते हैं, नीचे सफेद फफूंद",
+      "ta": "வெளிர் பச்சை நீர் தோய்ந்த புண்கள் கருமையான பழுப்பாக மாறும், கீழ் வெள்ளை பூஞ்சை வளர்ச்சி"
+    },
+    "treatment": {
+      "en": [
+        "Apply Metalaxyl + Mancozeb immediately",
+        "Spray Cymoxanil 8% + Mancozeb 64%",
+        "Destroy infected plant debris"
+      ],
+      "hi": [
+        "तुरंत Metalaxyl + Mancozeb लगाएं",
+        "Cymoxanil 8% + Mancozeb 64% का छिड़काव करें",
+        "संक्रमित पौधों के अवशेष नष्ट करें"
+      ],
+      "ta": [
+        "உடனே Metalaxyl + Mancozeb தெளிக்கவும்",
+        "Cymoxanil 8% + Mancozeb 64% தெளிக்கவும்",
+        "பாதிக்கப்பட்ட செடி எச்சங்களை அழிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Plant resistant varieties",
+        "Avoid excessive irrigation",
+        "Spray preventively before rain"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्में लगाएं",
+        "अत्यधिक सिंचाई से बचें",
+        "बारिश से पहले निवारक छिड़काव करें"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்களை நடவும்",
+        "அதிக நீர்ப்பாசனம் தவிர்க்கவும்",
+        "மழைக்கு முன் தடுப்பு தெளிப்பு செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 90,
+      "temp_min": 10,
+      "temp_max": 22
+    }
+  },
+  "Potato_Healthy": {
+    "crop": {
+      "en": "Potato",
+      "hi": "आलू",
+      "ta": "உருளைக்கிழங்கு"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं मिली। पौधा स्वस्थ दिखता है।",
+      "ta": "நோய் எதுவும் கண்டறியப்படவில்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Continue regular monitoring",
+        "Ensure proper drainage",
+        "Apply potassium-rich fertilizer"
+      ],
+      "hi": [
+        "नियमित निगरानी जारी रखें",
+        "उचित जल निकासी सुनिश्चित करें",
+        "पोटेशियम युक्त उर्वरक डालें"
+      ],
+      "ta": [
+        "தொடர்ந்து கண்காணிக்கவும்",
+        "சரியான வடிகால் உறுதி செய்யவும்",
+        "பொட்டாசியம் நிறைந்த உரம் இடவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Pepper_Bacterial_Spot": {
+    "crop": {
+      "en": "Pepper",
+      "hi": "मिर्च",
+      "ta": "மிளகாய்"
+    },
+    "disease": {
+      "en": "Bacterial Spot",
+      "hi": "बैक्टीरियल स्पॉट",
+      "ta": "பாக்டீரியா புள்ளி"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Small water-soaked lesions on leaves and fruit with yellow halos",
+      "hi": "पत्तियों और फलों पर पीले घेरे वाले छोटे पानी से भीगे घाव",
+      "ta": "இலைகள் மற்றும் காய்களில் மஞ்சள் வளையங்களுடன் சிறிய நீர் தோய்ந்த புண்கள்"
+    },
+    "treatment": {
+      "en": [
+        "Spray copper hydroxide 77 WP @ 2g/litre",
+        "Apply copper oxychloride bactericide",
+        "Remove infected plant parts"
+      ],
+      "hi": [
+        "कॉपर हाइड्रॉक्साइड 77 WP @ 2g/लीटर का छिड़काव करें",
+        "कॉपर ऑक्सीक्लोराइड बैक्टीरियानाशक लगाएं",
+        "संक्रमित पौधों के हिस्सों को हटाएं"
+      ],
+      "ta": [
+        "காப்பர் ஹைட்ராக்சைடு 77 WP @ 2கி/லி தெளிக்கவும்",
+        "காப்பர் ஆக்சிகுளோரைடு பாக்டீரியாக்கொல்லி தெளிக்கவும்",
+        "பாதிக்கப்பட்ட செடி பாகங்களை அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use disease-free transplants",
+        "Avoid overhead watering",
+        "Rotate crops — avoid same spot 2 years running"
+      ],
+      "hi": [
+        "रोगमुक्त पौध का उपयोग करें",
+        "ऊपर से पानी देने से बचें",
+        "फसल चक्र अपनाएं — 2 साल तक एक ही जगह न लगाएं"
+      ],
+      "ta": [
+        "நோயற்ற நாற்றுகளை பயன்படுத்தவும்",
+        "மேலிருந்து நீர் ஊற்றுவதை தவிர்க்கவும்",
+        "பயிர் சுழற்சி — ஒரே இடத்தில் 2 ஆண்டுகள் நடவாதீர்கள்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 24,
+      "temp_max": 32
+    }
+  },
+  "Pepper_Healthy": {
+    "crop": {
+      "en": "Pepper",
+      "hi": "मिर्च",
+      "ta": "மிளகாய்"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं मिली। पौधा स्वस्थ दिखता है।",
+      "ta": "நோய் எதுவும் கண்டறியப்படவில்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Continue regular monitoring",
+        "Maintain soil health with compost",
+        "Water at base only"
+      ],
+      "hi": [
+        "नियमित निगरानी जारी रखें",
+        "खाद से मिट्टी की सेहत बनाए रखें",
+        "केवल जड़ में पानी दें"
+      ],
+      "ta": [
+        "தொடர்ந்து கண்காணிக்கவும்",
+        "மக்கிய உரத்தால் மண் வளம் பராமரிக்கவும்",
+        "அடியில் மட்டும் நீர் ஊற்றவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Tomato_Spider_Mites": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Spider Mites",
+      "hi": "स्पाइडर माइट्स",
+      "ta": "சிலந்தி பூச்சி"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Tiny yellow or white speckling on leaves, fine webbing on underside",
+      "hi": "पत्तियों पर छोटे पीले या सफेद धब्बे, नीचे की तरफ महीन जाल",
+      "ta": "இலைகளில் சிறிய மஞ்சள் அல்லது வெள்ளை புள்ளிகள், கீழ் பகுதியில் நூலிழை வலை"
+    },
+    "treatment": {
+      "en": [
+        "Spray neem oil @ 5ml/litre",
+        "Apply Abamectin 1.9% EC",
+        "Use miticide like Dicofol"
+      ],
+      "hi": [
+        "नीम तेल @ 5ml/लीटर का छिड़काव करें",
+        "Abamectin 1.9% EC लगाएं",
+        "Dicofol जैसे माइटिसाइड का उपयोग करें"
+      ],
+      "ta": [
+        "வேப்ப எண்ணெய் @ 5ml/லி தெளிக்கவும்",
+        "Abamectin 1.9% EC தெளிக்கவும்",
+        "Dicofol போன்ற மைட்டிசைடு பயன்படுத்தவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Maintain adequate soil moisture",
+        "Introduce natural predators",
+        "Avoid water stress"
+      ],
+      "hi": [
+        "पर्याप्त मिट्टी की नमी बनाए रखें",
+        "प्राकृतिक शिकारियों को लाएं",
+        "जल तनाव से बचें"
+      ],
+      "ta": [
+        "போதுமான மண் ஈரப்பதம் பராமரிக்கவும்",
+        "இயற்கை வேட்டையாடிகளை அறிமுகப்படுத்தவும்",
+        "நீர் அழுத்தம் தவிர்க்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 60,
+      "temp_min": 27,
+      "temp_max": 40
+    }
+  },
+  "Tomato_Target_Spot": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Target Spot",
+      "hi": "टारगेट स्पॉट",
+      "ta": "இலக்கு புள்ளி"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Circular brown lesions with concentric rings resembling a target on leaves and fruit",
+      "hi": "पत्तियों और फलों पर केंद्रित वलयों वाले गोलाकार भूरे घाव",
+      "ta": "இலைகள் மற்றும் காய்களில் இலக்கை ஒத்த வட்ட வளையங்களுடன் கூடிய பழுப்பு புண்கள்"
+    },
+    "treatment": {
+      "en": [
+        "Apply Chlorothalonil 75 WP @ 2g/litre",
+        "Spray Azoxystrobin 23% SC",
+        "Remove infected fruits"
+      ],
+      "hi": [
+        "Chlorothalonil 75 WP @ 2g/लीटर लगाएं",
+        "Azoxystrobin 23% SC का छिड़काव करें",
+        "संक्रमित फलों को हटाएं"
+      ],
+      "ta": [
+        "Chlorothalonil 75 WP @ 2கி/லி தெளிக்கவும்",
+        "Azoxystrobin 23% SC தெளிக்கவும்",
+        "பாதிக்கப்பட்ட காய்களை அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use certified seeds",
+        "Avoid dense planting",
+        "Rotate crops"
+      ],
+      "hi": [
+        "प्रमाणित बीजों का उपयोग करें",
+        "घनी बुवाई से बचें",
+        "फसल चक्र अपनाएं"
+      ],
+      "ta": [
+        "சான்றளிக்கப்பட்ட விதைகளை பயன்படுத்தவும்",
+        "அடர் நடவு தவிர்க்கவும்",
+        "பயிர் சுழற்சி பின்பற்றவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 20,
+      "temp_max": 30
+    }
+  },
+  "Tomato_Yellow_Leaf_Curl": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Yellow Leaf Curl Virus",
+      "hi": "पीला पत्ती कर्ल वायरस",
+      "ta": "மஞ்சள் இலை சுருட்டை வைரஸ்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Yellow curling leaves, stunted growth, upward leaf curling — spread by whitefly",
+      "hi": "पीली मुड़ी हुई पत्तियां, बौना विकास, ऊपर की ओर पत्ती का मुड़ना — सफेद मक्खी से फैलता है",
+      "ta": "மஞ்சள் சுருண்ட இலைகள், மstunted வளர்ச்சி, மேல்நோக்கி சுருளும் இலைகள் — வெள்ளை ஈயால் பரவுகிறது"
+    },
+    "treatment": {
+      "en": [
+        "Control whitefly with Imidacloprid 17.8 SL",
+        "Remove severely infected plants",
+        "Apply Thiamethoxam 25 WG"
+      ],
+      "hi": [
+        "Imidacloprid 17.8 SL से सफेद मक्खी को नियंत्रित करें",
+        "अत्यधिक संक्रमित पौधों को हटाएं",
+        "Thiamethoxam 25 WG लगाएं"
+      ],
+      "ta": [
+        "Imidacloprid 17.8 SL மூலம் வெள்ளை ஈயை கட்டுப்படுத்தவும்",
+        "அதிகமாக பாதிக்கப்பட்ட செடிகளை அகற்றவும்",
+        "Thiamethoxam 25 WG தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use virus-resistant varieties",
+        "Install yellow sticky traps",
+        "Avoid planting near infected fields"
+      ],
+      "hi": [
+        "वायरस-प्रतिरोधी किस्मों का उपयोग करें",
+        "पीले चिपचिपे जाल लगाएं",
+        "संक्रमित खेतों के पास न लगाएं"
+      ],
+      "ta": [
+        "வைரஸ் எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "மஞ்சள் ஒட்டும் பொறிகள் வையுங்கள்",
+        "பாதிக்கப்பட்ட வயல்களுக்கு அருகில் நடவாதீர்கள்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 70,
+      "temp_min": 25,
+      "temp_max": 35
+    }
+  },
+  "Tomato_Mosaic_Virus": {
+    "crop": {
+      "en": "Tomato",
+      "hi": "टमाटर",
+      "ta": "தக்காளி"
+    },
+    "disease": {
+      "en": "Mosaic Virus",
+      "hi": "मोज़ेक वायरस",
+      "ta": "மொசைக் வைரஸ்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Mottled light and dark green mosaic pattern on leaves, distorted growth",
+      "hi": "पत्तियों पर हल्के और गहरे हरे रंग का मोज़ेक पैटर्न, विकृत विकास",
+      "ta": "இலைகளில் வெளிர் மற்றும் அடர் பச்சை மொசைக் வடிவம், சிதைந்த வளர்ச்சி"
+    },
+    "treatment": {
+      "en": [
+        "Remove and destroy infected plants",
+        "Disinfect tools with bleach",
+        "Control aphid vectors with Dimethoate"
+      ],
+      "hi": [
+        "संक्रमित पौधों को हटाएं और नष्ट करें",
+        "ब्लीच से औजारों को कीटाणुरहित करें",
+        "Dimethoate से एफिड वाहकों को नियंत्रित करें"
+      ],
+      "ta": [
+        "பாதிக்கப்பட்ட செடிகளை அகற்றி அழிக்கவும்",
+        "கருவிகளை ப்ளீச்சால் கிருமி நீக்கம் செய்யவும்",
+        "Dimethoate மூலம் ஆஃபிட் கடத்திகளை கட்டுப்படுத்தவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use certified virus-free seeds",
+        "Control aphids early",
+        "Avoid tobacco near plants"
+      ],
+      "hi": [
+        "प्रमाणित वायरस-मुक्त बीजों का उपयोग करें",
+        "एफिड को जल्दी नियंत्रित करें",
+        "पौधों के पास तंबाकू से बचें"
+      ],
+      "ta": [
+        "சான்றளிக்கப்பட்ட வைரஸ்-இல்லா விதைகளை பயன்படுத்தவும்",
+        "ஆஃபிட்களை ஆரம்பத்திலேயே கட்டுப்படுத்தவும்",
+        "செடிகளுக்கு அருகில் புகையிலை தவிர்க்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 65,
+      "temp_min": 20,
+      "temp_max": 32
+    }
+  },
+  "Unknown_Disease": {
+    "crop": {
+      "en": "Unknown",
+      "hi": "अज्ञात",
+      "ta": "அறியப்படாத"
+    },
+    "disease": {
+      "en": "Unsupported / Low Confidence",
+      "hi": "असमर्थित / कम विश्वास",
+      "ta": "ஆதரிக்கப்படாத / குறைந்த நம்பகத்தன்மை"
+    },
+    "risk_level": "unknown",
+    "symptoms": {
+      "en": "Disease could not be identified with sufficient confidence. Please upload a clearer, well-lit image.",
+      "hi": "रोग को पर्याप्त विश्वास के साथ पहचाना नहीं जा सका। कृपया एक स्पष्ट, अच्छी रोशनी वाली छवि अपलोड करें।",
+      "ta": "நோயை போதுமான நம்பகத்தன்மையுடன் அடையாளம் காண முடியவில்லை. தெளிவான, நன்கு ஒளி உள்ள படத்தை பதிவேற்றவும்."
+    },
+    "treatment": {
+      "en": [
+        "Consult a local agricultural expert",
+        "Retake the photo in good lighting",
+        "Ensure the leaf fills the frame"
+      ],
+      "hi": [
+        "स्थानीय कृषि विशेषज्ञ से परामर्श करें",
+        "अच्छी रोशनी में दोबारा फोटो लें",
+        "सुनिश्चित करें कि पत्ती फ्रेम में भरी हो"
+      ],
+      "ta": [
+        "உள்ளூர் வேளாண் நிபுணரை அணுகவும்",
+        "நல்ல ஒளியில் மீண்டும் புகைப்படம் எடுக்கவும்",
+        "இலை சட்டத்தை நிரப்புவதை உறுதி செய்யவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Monitor crops regularly",
+        "Keep records of symptoms",
+        "Contact AgriSense support"
+      ],
+      "hi": [
+        "फसलों की नियमित निगरानी करें",
+        "लक्षणों का रिकॉर्ड रखें",
+        "AgriSense सहायता से संपर्क करें"
+      ],
+      "ta": [
+        "பயிர்களை தொடர்ந்து கண்காணிக்கவும்",
+        "அறிகுறிகளை பதிவு செய்யவும்",
+        "AgriSense ஆதரவை தொடர்பு கொள்ளவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Rice_Bacterial_Blight": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "Bacterial Blight",
+      "hi": "बैक्टीरियल ब्लाइट",
+      "ta": "பாக்டீரியா காய்ச்சல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Water-soaked yellowish stripes on leaf margins turning white, wilting of leaves",
+      "hi": "पत्ती के किनारों पर पानी जैसी पीली धारियाँ जो सफेद हो जाती हैं, पत्तियों का मुरझाना",
+      "ta": "இலை விளிம்புகளில் நீர் தோய்ந்த மஞ்சள் கோடுகள் வெள்ளையாக மாறும், இலைகள் வாடும்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Streptomycin sulphate 90% SP @ 0.5g/litre",
+        "Apply copper oxychloride 50 WP",
+        "Drain and re-flood the field"
+      ],
+      "hi": [
+        "Streptomycin sulphate 90% SP @ 0.5g/लीटर का छिड़काव करें",
+        "कॉपर ऑक्सीक्लोराइड 50 WP लगाएं",
+        "खेत को सुखाकर फिर से भरें"
+      ],
+      "ta": [
+        "Streptomycin sulphate 90% SP @ 0.5கி/லி தெளிக்கவும்",
+        "காப்பர் ஆக்சிகுளோரைடு 50 WP தெளிக்கவும்",
+        "வயலை வடிகட்டி மீண்டும் நீர் நிரப்பவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use resistant varieties (IR64, Samba Masuri)",
+        "Avoid excess nitrogen",
+        "Maintain field sanitation"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्मों का उपयोग करें",
+        "अत्यधिक नाइट्रोजन से बचें",
+        "खेत की सफाई बनाए रखें"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "அதிக நைட்ரஜன் தவிர்க்கவும்",
+        "வயல் சுகாதாரம் பராமரிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 85,
+      "temp_min": 25,
+      "temp_max": 34
+    }
+  },
+  "Rice_Blast": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "Blast Disease",
+      "hi": "ब्लास्ट रोग",
+      "ta": "பிளாஸ்ட் நோய்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Diamond-shaped lesions with grey centre and brown borders on leaves and neck",
+      "hi": "पत्तियों और गर्दन पर भूरे किनारों वाले हीरे के आकार के धूसर धब्बे",
+      "ta": "இலைகள் மற்றும் கழுத்தில் பழுப்பு விளிம்புகளுடன் வைர வடிவ சாம்பல் புண்கள்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Tricyclazole 75 WP @ 0.6g/litre",
+        "Apply Isoprothiolane 40 EC",
+        "Remove and burn infected plants"
+      ],
+      "hi": [
+        "Tricyclazole 75 WP @ 0.6g/लीटर का छिड़काव करें",
+        "Isoprothiolane 40 EC लगाएं",
+        "संक्रमित पौधों को जलाएं"
+      ],
+      "ta": [
+        "Tricyclazole 75 WP @ 0.6கி/லி தெளிக்கவும்",
+        "Isoprothiolane 40 EC தெளிக்கவும்",
+        "பாதிக்கப்பட்ட செடிகளை எரிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use blast-resistant varieties",
+        "Avoid excessive nitrogen",
+        "Ensure proper spacing"
+      ],
+      "hi": [
+        "ब्लास्ट-प्रतिरोधी किस्मों का उपयोग करें",
+        "अत्यधिक नाइट्रोजन से बचें",
+        "उचित दूरी सुनिश्चित करें"
+      ],
+      "ta": [
+        "பிளாஸ்ட் எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "அதிக நைட்ரஜன் தவிர்க்கவும்",
+        "சரியான இடைவெளி உறுதி செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 90,
+      "temp_min": 24,
+      "temp_max": 28
+    }
+  },
+  "Rice_Brown_Spot": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "Brown Spot",
+      "hi": "भूरा धब्बा",
+      "ta": "பழுப்பு புள்ளி"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Oval to circular brown spots with light grey centres on leaves",
+      "hi": "पत्तियों पर हल्के भूरे केंद्र वाले अंडाकार से गोल भूरे धब्बे",
+      "ta": "இலைகளில் வெளிர் சாம்பல் மையத்துடன் அண்டமான முதல் வட்டமான பழுப்பு புள்ளிகள்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Mancozeb 75 WP @ 2g/litre",
+        "Apply Edifenphos 50 EC",
+        "Improve soil nutrition with potassium"
+      ],
+      "hi": [
+        "Mancozeb 75 WP @ 2g/लीटर का छिड़काव करें",
+        "Edifenphos 50 EC लगाएं",
+        "पोटेशियम से मिट्टी पोषण सुधारें"
+      ],
+      "ta": [
+        "Mancozeb 75 WP @ 2கி/லி தெளிக்கவும்",
+        "Edifenphos 50 EC தெளிக்கவும்",
+        "பொட்டாசியத்தால் மண் ஊட்டம் மேம்படுத்தவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use disease-free seeds",
+        "Treat seeds with Thiram 75 WP",
+        "Maintain balanced fertilization"
+      ],
+      "hi": [
+        "रोगमुक्त बीजों का उपयोग करें",
+        "Thiram 75 WP से बीज उपचार करें",
+        "संतुलित उर्वरक बनाए रखें"
+      ],
+      "ta": [
+        "நோயற்ற விதைகளை பயன்படுத்தவும்",
+        "Thiram 75 WP மூலம் விதை சோதனை செய்யவும்",
+        "சமச்சீர் உரமிடல் பராமரிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 25,
+      "temp_max": 35
+    }
+  },
+  "Rice_Leaf_Blast": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "Leaf Blast",
+      "hi": "पत्ती ब्लास्ट",
+      "ta": "இலை பிளாஸ்ட்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Spindle-shaped white to greyish lesions with brown borders, coalesce to kill the leaf",
+      "hi": "भूरे किनारों वाले धुरी के आकार के सफेद से भूरे घाव, मिलकर पत्ती को नष्ट करते हैं",
+      "ta": "பழுப்பு விளிம்புகளுடன் வெள்ளை முதல் சாம்பல் நடு பிரம்பு வடிவ புண்கள், இணைந்து இலையை அழிக்கும்"
+    },
+    "treatment": {
+      "en": [
+        "Apply Tricyclazole 75 WP @ 0.6g/litre",
+        "Spray Carpropamid 15% WP",
+        "Destroy infected crop residues"
+      ],
+      "hi": [
+        "Tricyclazole 75 WP @ 0.6g/लीटर लगाएं",
+        "Carpropamid 15% WP का छिड़काव करें",
+        "संक्रमित फसल के अवशेष नष्ट करें"
+      ],
+      "ta": [
+        "Tricyclazole 75 WP @ 0.6கி/லி தெளிக்கவும்",
+        "Carpropamid 15% WP தெளிக்கவும்",
+        "பாதிக்கப்பட்ட பயிர் எச்சங்களை அழிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Plant resistant varieties",
+        "Avoid dense canopy",
+        "Apply silicon fertilizer"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्में लगाएं",
+        "घने छतरी से बचें",
+        "सिलिकॉन उर्वरक लगाएं"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்கள் நடவும்",
+        "அடர்த்தியான கூரை தவிர்க்கவும்",
+        "சிலிக்கான் உரம் இடவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 88,
+      "temp_min": 22,
+      "temp_max": 30
+    }
+  },
+  "Rice_False_Smut": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "False Smut Disease",
+      "hi": "फॉल्स स्मट रोग",
+      "ta": "பொய் தவிடு நோய்"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Individual grains transform into greenish-black powdery balls at heading stage",
+      "hi": "बालियाँ निकलते समय व्यक्तिगत दाने हरे-काले पाउडर की गेंद में बदल जाते हैं",
+      "ta": "தலைப்பு கட்டத்தில் தனிப்பட்ட தானியங்கள் பச்சை-கருப்பு தூள் உருண்டைகளாக மாறும்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Propiconazole 25 EC @ 1ml/litre",
+        "Apply Copper oxychloride 50 WP",
+        "Collect and destroy smut balls"
+      ],
+      "hi": [
+        "Propiconazole 25 EC @ 1ml/लीटर का छिड़काव करें",
+        "कॉपर ऑक्सीक्लोराइड 50 WP लगाएं",
+        "स्मट बॉल्स एकत्र कर नष्ट करें"
+      ],
+      "ta": [
+        "Propiconazole 25 EC @ 1ml/லி தெளிக்கவும்",
+        "காப்பர் ஆக்சிகுளோரைடு 50 WP தெளிக்கவும்",
+        "தவிடு உருண்டைகளை சேகரித்து அழிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use certified clean seeds",
+        "Avoid late planting",
+        "Maintain optimum plant density"
+      ],
+      "hi": [
+        "प्रमाणित स्वच्छ बीजों का उपयोग करें",
+        "देर से रोपाई से बचें",
+        "इष्टतम पौध घनत्व बनाए रखें"
+      ],
+      "ta": [
+        "சான்றளிக்கப்பட்ட சுத்தமான விதைகளை பயன்படுத்தவும்",
+        "தாமதமான நடவு தவிர்க்கவும்",
+        "உகந்த செடி அடர்த்தி பராமரிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 85,
+      "temp_min": 25,
+      "temp_max": 32
+    }
+  },
+  "Rice_Healthy": {
+    "crop": {
+      "en": "Rice",
+      "hi": "चावल",
+      "ta": "அரிசி"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं। पौधा स्वस्थ है।",
+      "ta": "நோய் இல்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Maintain water levels",
+        "Apply balanced NPK fertilizer",
+        "Monitor regularly"
+      ],
+      "hi": [
+        "जल स्तर बनाए रखें",
+        "संतुलित NPK उर्वरक डालें",
+        "नियमित निगरानी करें"
+      ],
+      "ta": [
+        "நீர் மட்டம் பராமரிக்கவும்",
+        "சமச்சீர் NPK உரம் இடவும்",
+        "தொடர்ந்து கண்காணிக்கவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Corn_Common_Rust": {
+    "crop": {
+      "en": "Corn (Maize)",
+      "hi": "मक्का",
+      "ta": "மக்காச்சோளம்"
+    },
+    "disease": {
+      "en": "Common Rust",
+      "hi": "सामान्य जंग",
+      "ta": "பொதுவான துரு"
+    },
+    "risk_level": "medium",
+    "symptoms": {
+      "en": "Brick-red oval pustules on both leaf surfaces, yellowing and drying of leaves",
+      "hi": "दोनों पत्ती सतहों पर ईंट-लाल अंडाकार पुस्ट्यूल, पत्तियों का पीला पड़ना और सूखना",
+      "ta": "இரு இலை மேற்பரப்பிலும் செங்கல்-சிவப்பு அண்டமான புண்கள், இலைகள் மஞ்சளாகி உலர்வு"
+    },
+    "treatment": {
+      "en": [
+        "Spray Mancozeb 75 WP @ 2g/litre",
+        "Apply Propiconazole 25 EC @ 1ml/litre",
+        "Remove severely infected plants"
+      ],
+      "hi": [
+        "Mancozeb 75 WP @ 2g/लीटर का छिड़काव करें",
+        "Propiconazole 25 EC @ 1ml/लीटर लगाएं",
+        "अत्यधिक संक्रमित पौधों को हटाएं"
+      ],
+      "ta": [
+        "Mancozeb 75 WP @ 2கி/லி தெளிக்கவும்",
+        "Propiconazole 25 EC @ 1ml/லி தெளிக்கவும்",
+        "அதிகமாக பாதிக்கப்பட்ட செடிகளை அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use resistant hybrid varieties",
+        "Avoid high plant density",
+        "Plant early in the season"
+      ],
+      "hi": [
+        "प्रतिरोधी हाइब्रिड किस्मों का उपयोग करें",
+        "अधिक पौध घनत्व से बचें",
+        "मौसम की शुरुआत में बुवाई करें"
+      ],
+      "ta": [
+        "எதிர்ப்பு கலப்பின ரகங்கள் பயன்படுத்தவும்",
+        "அதிக செடி அடர்த்தி தவிர்க்கவும்",
+        "பருவத்தின் தொடக்கத்தில் நடவு செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 16,
+      "temp_max": 25
+    }
+  },
+  "Corn_Gray_Leaf_Spot": {
+    "crop": {
+      "en": "Corn (Maize)",
+      "hi": "मक्का",
+      "ta": "மக்காச்சோளம்"
+    },
+    "disease": {
+      "en": "Gray Leaf Spot",
+      "hi": "ग्रे लीफ स्पॉट",
+      "ta": "சாம்பல் இலை புள்ளி"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Rectangular grey-tan lesions bordered by leaf veins, running parallel to midrib",
+      "hi": "पत्ती की नसों से घिरे आयताकार भूरे-पीले धब्बे, मध्य शिरा के समानांतर",
+      "ta": "இலை நரம்புகளால் சூழப்பட்ட செவ்வக சாம்பல்-பழுப்பு புண்கள், நடு நரம்புக்கு இணையாக"
+    },
+    "treatment": {
+      "en": [
+        "Apply Strobilurin fungicide (Azoxystrobin)",
+        "Spray Propiconazole 25 EC",
+        "Ensure good field drainage"
+      ],
+      "hi": [
+        "Strobilurin फफूंदनाशक (Azoxystrobin) लगाएं",
+        "Propiconazole 25 EC का छिड़काव करें",
+        "अच्छी खेत जल निकासी सुनिश्चित करें"
+      ],
+      "ta": [
+        "Strobilurin பூஞ்சைக்கொல்லி (Azoxystrobin) தெளிக்கவும்",
+        "Propiconazole 25 EC தெளிக்கவும்",
+        "நல்ல வயல் வடிகால் உறுதி செய்யவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Rotate crops with soybean or legumes",
+        "Use resistant hybrids",
+        "Reduce crop residue on soil surface"
+      ],
+      "hi": [
+        "सोयाबीन या फलीदार फसलों के साथ बारी-बारी करें",
+        "प्रतिरोधी हाइब्रिड उपयोग करें",
+        "मिट्टी की सतह पर फसल अवशेष कम करें"
+      ],
+      "ta": [
+        "சோயாபீன் அல்லது பருப்பு வகை பயிர்களுடன் சுழற்சி செய்யவும்",
+        "எதிர்ப்பு கலப்பினம் பயன்படுத்தவும்",
+        "மண் மேற்பரப்பில் பயிர் எச்சம் குறைக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 85,
+      "temp_min": 20,
+      "temp_max": 30
+    }
+  },
+  "Corn_Northern_Blight": {
+    "crop": {
+      "en": "Corn (Maize)",
+      "hi": "मक्का",
+      "ta": "மக்காச்சோளம்"
+    },
+    "disease": {
+      "en": "Northern Leaf Blight",
+      "hi": "उत्तरी पत्ती झुलसा",
+      "ta": "வடக்கு இலை காய்ச்சல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Long cigar-shaped grey-green lesions on leaves that later turn tan with dark borders",
+      "hi": "पत्तियों पर लंबे सिगार के आकार के भूरे-हरे धब्बे जो बाद में काले किनारों के साथ पीले पड़ जाते हैं",
+      "ta": "இலைகளில் நீண்ட சிகார் வடிவ சாம்பல்-பச்சை புண்கள் பின்னர் கருப்பு விளிம்புகளுடன் பழுப்பாகும்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Mancozeb 75 WP @ 2g/litre",
+        "Apply Metalaxyl + Mancozeb",
+        "Remove infected leaves promptly"
+      ],
+      "hi": [
+        "Mancozeb 75 WP @ 2g/लीटर का छिड़काव करें",
+        "Metalaxyl + Mancozeb लगाएं",
+        "संक्रमित पत्तियों को तुरंत हटाएं"
+      ],
+      "ta": [
+        "Mancozeb 75 WP @ 2கி/லி தெளிக்கவும்",
+        "Metalaxyl + Mancozeb தெளிக்கவும்",
+        "பாதிக்கப்பட்ட இலைகளை உடனே அகற்றவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use tolerant hybrids",
+        "Rotate with non-host crops",
+        "Till soil to bury infected residue"
+      ],
+      "hi": [
+        "सहनशील हाइब्रिड उपयोग करें",
+        "गैर-मेज़बान फसलों के साथ बारी-बारी करें",
+        "संक्रमित अवशेष दबाने के लिए जुताई करें"
+      ],
+      "ta": [
+        "சகிப்பு கலப்பினம் பயன்படுத்தவும்",
+        "இல்லாத பயிர்களுடன் சுழற்சி செய்யவும்",
+        "பாதிக்கப்பட்ட எச்சம் புதைக்க உழவு செய்யவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 18,
+      "temp_max": 28
+    }
+  },
+  "Corn_Healthy": {
+    "crop": {
+      "en": "Corn (Maize)",
+      "hi": "मक्का",
+      "ta": "மக்காச்சோளம்"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं। पौधा स्वस्थ है।",
+      "ta": "நோய் இல்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Apply balanced fertilizer",
+        "Ensure proper irrigation",
+        "Monitor for pests"
+      ],
+      "hi": [
+        "संतुलित उर्वरक डालें",
+        "उचित सिंचाई सुनिश्चित करें",
+        "कीटों की निगरानी करें"
+      ],
+      "ta": [
+        "சமச்சீர் உரம் இடவும்",
+        "சரியான நீர்ப்பாசனம் உறுதி செய்யவும்",
+        "பூச்சிகளை கண்காணிக்கவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Wheat_Brown_Rust": {
+    "crop": {
+      "en": "Wheat",
+      "hi": "गेहूं",
+      "ta": "கோதுமை"
+    },
+    "disease": {
+      "en": "Brown Rust (Leaf Rust)",
+      "hi": "भूरा जंग (पत्ती जंग)",
+      "ta": "பழுப்பு துரு (இலை துரு)"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Orange-brown circular uredia pustules on upper leaf surface, yellowing around pustules",
+      "hi": "ऊपरी पत्ती की सतह पर नारंगी-भूरे गोलाकार यूरेडिया पुस्ट्यूल, पुस्ट्यूल के आसपास पीलापन",
+      "ta": "மேல் இலை மேற்பரப்பில் ஆரஞ்சு-பழுப்பு வட்ட யூரேடியா புண்கள், புண்களைச் சுற்றி மஞ்சளாதல்"
+    },
+    "treatment": {
+      "en": [
+        "Spray Propiconazole 25 EC @ 1ml/litre",
+        "Apply Tebuconazole 25.9% EC",
+        "Start treatment at first sign of disease"
+      ],
+      "hi": [
+        "Propiconazole 25 EC @ 1ml/लीटर का छिड़काव करें",
+        "Tebuconazole 25.9% EC लगाएं",
+        "रोग के पहले लक्षण पर उपचार शुरू करें"
+      ],
+      "ta": [
+        "Propiconazole 25 EC @ 1ml/லி தெளிக்கவும்",
+        "Tebuconazole 25.9% EC தெளிக்கவும்",
+        "நோயின் முதல் அறிகுறியில் சிகிச்சை தொடங்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use rust-resistant varieties (HD 2781, PBW 343)",
+        "Avoid late sowing",
+        "Monitor fields regularly during humid weather"
+      ],
+      "hi": [
+        "जंग-प्रतिरोधी किस्मों का उपयोग करें",
+        "देर से बुवाई से बचें",
+        "नम मौसम में खेतों की नियमित निगरानी करें"
+      ],
+      "ta": [
+        "துரு-எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "தாமதமான விதைப்பு தவிர்க்கவும்",
+        "ஈரமான வானிலையில் வயல்களை தொடர்ந்து கண்காணிக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 75,
+      "temp_min": 15,
+      "temp_max": 22
+    }
+  },
+  "Wheat_Yellow_Rust": {
+    "crop": {
+      "en": "Wheat",
+      "hi": "गेहूं",
+      "ta": "கோதுமை"
+    },
+    "disease": {
+      "en": "Yellow Rust (Stripe Rust)",
+      "hi": "पीला जंग (धारी जंग)",
+      "ta": "மஞ்சள் துரு (கோடு துரு)"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Yellow-orange pustules in parallel stripes along the leaf veins",
+      "hi": "पत्ती की नसों के साथ समानांतर धारियों में पीले-नारंगी पुस्ट्यूल",
+      "ta": "இலை நரம்புகளோடு இணையான கோடுகளில் மஞ்சள்-ஆரஞ்சு புண்கள்"
+    },
+    "treatment": {
+      "en": [
+        "Apply Propiconazole 25 EC @ 1ml/litre",
+        "Spray Triadimefon 25 WP",
+        "Apply at boot stage for maximum effect"
+      ],
+      "hi": [
+        "Propiconazole 25 EC @ 1ml/लीटर लगाएं",
+        "Triadimefon 25 WP का छिड़काव करें",
+        "अधिकतम प्रभाव के लिए बूट स्टेज पर लगाएं"
+      ],
+      "ta": [
+        "Propiconazole 25 EC @ 1ml/லி தெளிக்கவும்",
+        "Triadimefon 25 WP தெளிக்கவும்",
+        "அதிக விளைவுக்கு boot நிலையில் தெளிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Plant resistant varieties",
+        "Avoid dense planting",
+        "Apply balanced nutrition especially potassium"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्में लगाएं",
+        "घनी बुवाई से बचें",
+        "विशेष रूप से पोटेशियम का संतुलित पोषण दें"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்கள் நடவும்",
+        "அடர் விதைப்பு தவிர்க்கவும்",
+        "குறிப்பாக பொட்டாசியம் சமச்சீர் ஊட்டம் இடவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 10,
+      "temp_max": 20
+    }
+  },
+  "Wheat_Healthy": {
+    "crop": {
+      "en": "Wheat",
+      "hi": "गेहूं",
+      "ta": "கோதுமை"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं। पौधा स्वस्थ है।",
+      "ta": "நோய் இல்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Apply urea at tillering stage",
+        "Ensure adequate moisture",
+        "Monitor for aphids"
+      ],
+      "hi": [
+        "कल्ले फूटने के समय यूरिया डालें",
+        "पर्याप्त नमी सुनिश्चित करें",
+        "एफिड की निगरानी करें"
+      ],
+      "ta": [
+        "கிளைக்கும் நிலையில் யூரியா இடவும்",
+        "போதுமான ஈரப்பதம் உறுதி செய்யவும்",
+        "ஆஃபிட்களை கண்காணிக்கவும்"
+      ]
+    },
+    "weather_risk": {}
+  },
+  "Sugarcane_Bacterial_Blight": {
+    "crop": {
+      "en": "Sugarcane",
+      "hi": "गन्ना",
+      "ta": "கரும்பு"
+    },
+    "disease": {
+      "en": "Bacterial Blight",
+      "hi": "बैक्टीरियल ब्लाइट",
+      "ta": "பாக்டீரியா காய்ச்சல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Water-soaked lesions on leaves that turn reddish-brown with yellow halos, leaf twisting and death",
+      "hi": "पत्तियों पर पानी से भीगे घाव जो पीले घेरे के साथ लाल-भूरे हो जाते हैं, पत्ती मुड़ जाना और मरना",
+      "ta": "இலைகளில் நீர் தோய்ந்த புண்கள் மஞ்சள் வளையங்களுடன் சிவப்பு-பழுப்பாக மாறும், இலை சுருளல் மற்றும் மரணம்"
+    },
+    "treatment": {
+      "en": [
+        "Use disease-free setts for planting",
+        "Spray copper hydroxide 77 WP",
+        "Rogue out and burn infected clumps"
+      ],
+      "hi": [
+        "रोपाई के लिए रोगमुक्त सेट्स उपयोग करें",
+        "कॉपर हाइड्रॉक्साइड 77 WP का छिड़काव करें",
+        "संक्रमित झुंड को उखाड़कर जलाएं"
+      ],
+      "ta": [
+        "நடவுக்கு நோயற்ற சில்லுகளை பயன்படுத்தவும்",
+        "காப்பர் ஹைட்ராக்சைடு 77 WP தெளிக்கவும்",
+        "பாதிக்கப்பட்ட கொத்துகளை பிடுங்கி எரிக்கவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use resistant varieties (Co 86032)",
+        "Treat setts with Agrimycin 100 ppm",
+        "Practice crop rotation"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्मों का उपयोग करें",
+        "सेट्स को Agrimycin 100 ppm से उपचारित करें",
+        "फसल चक्र अपनाएं"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "சில்லுகளை Agrimycin 100 ppm மூலம் சோதனை செய்யவும்",
+        "பயிர் சுழற்சி பின்பற்றவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 80,
+      "temp_min": 28,
+      "temp_max": 38
+    }
+  },
+  "Sugarcane_Red_Rot": {
+    "crop": {
+      "en": "Sugarcane",
+      "hi": "गन्ना",
+      "ta": "கரும்பு"
+    },
+    "disease": {
+      "en": "Red Rot",
+      "hi": "लाल सड़न",
+      "ta": "சிவப்பு அழுகல்"
+    },
+    "risk_level": "high",
+    "symptoms": {
+      "en": "Internal reddening of stalk tissue, white patches across red areas, sour smell from stalks",
+      "hi": "डंठल के ऊतकों का आंतरिक लाल होना, लाल क्षेत्रों में सफेद धब्बे, डंठल से खट्टी गंध",
+      "ta": "தண்டு திசுக்களின் உள் சிவத்தல், சிவப்பு பகுதிகளில் வெள்ளை திட்டுகள், தண்டுகளிலிருந்து புளிப்பு வாசனை"
+    },
+    "treatment": {
+      "en": [
+        "Destroy infected clumps immediately",
+        "Treat setts with Carbendazim 0.1%",
+        "Apply Trichoderma viride to soil"
+      ],
+      "hi": [
+        "संक्रमित झुंड तुरंत नष्ट करें",
+        "सेट्स को Carbendazim 0.1% से उपचारित करें",
+        "मिट्टी में Trichoderma viride लगाएं"
+      ],
+      "ta": [
+        "பாதிக்கப்பட்ட கொத்துகளை உடனே அழிக்கவும்",
+        "சில்லுகளை Carbendazim 0.1% மூலம் சோதிக்கவும்",
+        "மண்ணில் Trichoderma viride இடவும்"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Use resistant varieties (CoC 671, Co 86032)",
+        "Avoid waterlogging",
+        "Select healthy setts for planting"
+      ],
+      "hi": [
+        "प्रतिरोधी किस्मों का उपयोग करें",
+        "जलभराव से बचें",
+        "रोपाई के लिए स्वस्थ सेट्स चुनें"
+      ],
+      "ta": [
+        "எதிர்ப்பு ரகங்களை பயன்படுத்தவும்",
+        "நீர் தேக்கம் தவிர்க்கவும்",
+        "நடவுக்கு ஆரோக்கியமான சில்லுகளை தேர்ந்தெடுக்கவும்"
+      ]
+    },
+    "weather_risk": {
+      "humidity_above": 85,
+      "temp_min": 28,
+      "temp_max": 38
+    }
+  },
+  "Sugarcane_Healthy": {
+    "crop": {
+      "en": "Sugarcane",
+      "hi": "गन्ना",
+      "ta": "கரும்பு"
+    },
+    "disease": {
+      "en": "Healthy",
+      "hi": "स्वस्थ",
+      "ta": "ஆரோக்கியமானது"
+    },
+    "risk_level": "none",
+    "symptoms": {
+      "en": "No disease detected. Plant appears healthy.",
+      "hi": "कोई बीमारी नहीं। पौधा स्वस्थ है।",
+      "ta": "நோய் இல்லை. செடி ஆரோக்கியமாக உள்ளது."
+    },
+    "treatment": {
+      "en": [
+        "No treatment needed"
+      ],
+      "hi": [
+        "किसी उपचार की आवश्यकता नहीं"
+      ],
+      "ta": [
+        "சிகிச்சை தேவையில்லை"
+      ]
+    },
+    "prevention": {
+      "en": [
+        "Apply trash mulching",
+        "Ensure proper drainage",
+        "Monitor for borers regularly"
+      ],
+      "hi": [
+        "ट्रैश मल्चिंग लगाएं",
+        "उचित जल निकासी सुनिश्चित करें",
+        "नियमित रूप से बोरर की निगरानी करें"
+      ],
+      "ta": [
+        "குப்பை மல்ச்சிங் இடவும்",
+        "சரியான வடிகால் உறுதி செய்யவும்",
+        "தொடர்ந்து பூச்சியை கண்காணிக்கவும்"
+      ]
+    },
+    "weather_risk": {}
+  }
+}

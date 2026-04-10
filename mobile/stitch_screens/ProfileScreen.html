@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work_Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "outline": "#717973",
+                "on-error": "#ffffff",
+                "on-primary-fixed-variant": "#274e3d",
+                "surface-bright": "#fdf9ee",
+                "inverse-surface": "#313129",
+                "tertiary-container": "#5a302f",
+                "surface-dim": "#dddacf",
+                "primary-container": "#1b4332",
+                "tertiary-fixed-dim": "#f5b7b4",
+                "on-secondary-container": "#58685f",
+                "surface-tint": "#3f6653",
+                "on-primary-fixed": "#002114",
+                "secondary-fixed": "#d5e7db",
+                "primary-fixed": "#c1ecd4",
+                "on-secondary-fixed": "#101e17",
+                "error-container": "#ffdad6",
+                "surface-container": "#f2eee3",
+                "surface-variant": "#e6e2d8",
+                "on-surface-variant": "#414844",
+                "tertiary-fixed": "#ffdad8",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#ece8dd",
+                "on-tertiary-container": "#d29895",
+                "on-primary-container": "#86af99",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed-variant": "#673a39",
+                "inverse-primary": "#a5d0b9",
+                "on-surface": "#1c1c15",
+                "on-background": "#1c1c15",
+                "primary": "#012d1d",
+                "secondary-fixed-dim": "#b9cbbf",
+                "tertiary": "#401b1b",
+                "inverse-on-surface": "#f4f1e6",
+                "surface-container-low": "#f7f3e8",
+                "on-secondary-fixed-variant": "#3b4a42",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "primary-fixed-dim": "#a5d0b9",
+                "on-tertiary-fixed": "#331111",
+                "outline-variant": "#c1c8c2",
+                "background": "#fdf9ee",
+                "secondary": "#526259",
+                "on-secondary": "#ffffff",
+                "surface-container-highest": "#e6e2d8",
+                "on-tertiary": "#ffffff",
+                "surface": "#fdf9ee",
+                "secondary-container": "#d5e7db"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Work Sans"],
+                "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            -webkit-font-smoothing: antialiased;
+        }
+        .soft-well {
+            background-color: #f7f3e8;
+        }
+        .active-pill {
+            background-color: #1b4332;
+            color: #ffffff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<header class="w-full pt-4 pb-2 bg-[#fdf9ee] dark:bg-[#012d1d] sticky top-0 z-40">
+<div class="flex items-center justify-between px-6 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:bg-[#f7f3e8]/50 dark:hover:bg-[#1b4332]/50 rounded-full transition-colors p-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#1b4332] dark:text-[#d5e7db]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Manrope'] font-bold text-[1.75rem] tracking-tight text-[#1b4332] dark:text-[#d5e7db]">Settings</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container/20">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a cheerful middle-aged Indian farmer wearing a traditional white garment, warm natural sunlight lighting his face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYSxhbWRLXLwZLmXakY-zTMq6EBSji9bdtzHXTXceOhsELdpFHFt7jxF-eTx3UIcY_Q4fvhL2yfRNVqDlrtlQIhzYZXCzpr02S4ShGBn_LysgP2dPUzvHziZcBpvaJhUnaZM44ykslJbeMNQg3P-tfZtiE_vthVzlGVqszLba3niPk992WcDOBnKGABtMccxH2uKBzeUa6Jr01H3qx6ByQjrnHgDvsq3rXSiEsgdQaJVz23ki7335jwyC5O64mg27cARCrnV1oWxAt"/>
+</div>
+</div>
+</header>
+<main class="max-w-screen-md mx-auto px-6 pb-32">
+<!-- Profile Header -->
+<section class="mt-8 mb-10 flex flex-col items-center text-center">
+<div class="relative mb-4">
+<div class="w-32 h-32 rounded-full overflow-hidden ring-4 ring-white shadow-xl">
+<img alt="Ramesh Kumar" class="w-full h-full object-cover" data-alt="close-up portrait of a smiling Indian farmer in Coimbatore with a lush green plantation in the blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQyD7hwoQ6aQCqxcisqVCnrbEorDWM1umR6t3kOxXgflFx-8UOuHYcP18EPbc5dkzDolwfCBknEDSPU8GK-cb3Ug4TEwUcPvc1yCH8xkOH27ErjRK3-sDYFpxi_ZH-M8jVCi6SgbMJDH4PgjCYtoRlaL3CPgUsC5cQ79PdqktsCmbNTptrlBkq8atIkUVtIhdpsHOzWrk_9IfPGSSBIgwnnEGc1zTK4wPQc5fVtUUtWIHBQYMJxbHRkC3Cw4v7IymzN_3POsDStsS2"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-[1.25rem]" data-icon="edit">edit</span>
+</div>
+</div>
+<h2 class="font-headline font-extrabold text-3xl text-primary tracking-tight">Ramesh Kumar</h2>
+<div class="flex items-center gap-1 text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="font-medium">Coimbatore, TN</span>
+</div>
+</section>
+<!-- Preferences Section -->
+<section class="space-y-4 mb-10">
+<h3 class="font-label uppercase text-[0.75rem] tracking-[0.1em] text-on-surface-variant ml-2 mb-4">Preferences</h3>
+<div class="bg-surface-container-low rounded-xl p-2 space-y-1">
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</div>
+<span class="font-medium text-lg">Language</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-medium">English</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="agriculture">agriculture</span>
+</div>
+<span class="font-medium text-lg">Preferred Crop</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-medium">Tomato</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</div>
+<span class="font-medium text-lg">Notifications</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- App Tools Section -->
+<section class="space-y-4 mb-10">
+<h3 class="font-label uppercase text-[0.75rem] tracking-[0.1em] text-on-surface-variant ml-2 mb-4">App Tools</h3>
+<div class="bg-surface-container-low rounded-xl p-2 space-y-1">
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="record_voice_over">record_voice_over</span>
+</div>
+<span class="font-medium text-lg">Voice Guidance Language</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-medium">Tamil</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<span class="font-medium text-lg">Forecast Settings</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="sensors">sensors</span>
+</div>
+<span class="font-medium text-lg">Hardware (Soil Station)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="cloud_off">cloud_off</span>
+</div>
+<span class="font-medium text-lg">Offline Mode</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Active
+                    </div>
+</div>
+</div>
+</section>
+<!-- Support Section -->
+<section class="space-y-4 mb-12">
+<h3 class="font-label uppercase text-[0.75rem] tracking-[0.1em] text-on-surface-variant ml-2 mb-4">Support</h3>
+<div class="bg-surface-container-low rounded-xl p-2 space-y-1">
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</div>
+<span class="font-medium text-lg">Help Center</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="open_in_new">open_in_new</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+</div>
+<span class="font-medium text-lg">About AgriSense</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-lg cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary-container/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</div>
+<span class="font-medium text-lg">Contact Support</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Logout -->
+<div class="flex flex-col items-center mb-16">
+<button class="flex items-center gap-2 text-error font-bold px-8 py-4 rounded-full hover:bg-error/5 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                Logout
+            </button>
+<p class="text-[0.65rem] font-label uppercase text-outline-variant mt-2 tracking-widest">Version 2.4.1 (Stable)</p>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-[#fdf9ee]/60 dark:bg-[#012d1d]/60 backdrop-blur-xl shadow-[0_-4px_40px_rgba(1,45,29,0.06)] rounded-t-[3rem]">
+<div class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Work_Sans'] font-medium text-[0.75rem] tracking-[0.05em] uppercase">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-['Work_Sans'] font-medium text-[0.75rem] tracking-[0.05em] uppercase">History</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="sensors">sensors</span>
+<span class="font-['Work_Sans'] font-medium text-[0.75rem] tracking-[0.05em] uppercase">Sensors</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#58685f] dark:text-[#c1c8c2] px-5 py-2 hover:text-[#1b4332] dark:hover:text-[#fdf9ee] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-['Work_Sans'] font-medium text-[0.75rem] tracking-[0.05em] uppercase">Chat</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#1b4332] text-white rounded-full px-5 py-2 active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Work_Sans'] font-medium text-[0.75rem] tracking-[0.05em] uppercase">Settings</span>
+</div>
+</nav>
+</body></html>

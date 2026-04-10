@@ -1,0 +1,6 @@
+.env
+venv/
+__pycache__/
+*.pth
+*.h5
+temp_uploads/
